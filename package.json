@@ -8,7 +8,7 @@
     "headTest": "npm run test -- --headed",
     "chromeTest": "npm run test -- --browser chrome",
     "recordDashBoardTest": "npm run test -- --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --reporter mochawesome",
-    "Booking-Regression": "npx cypress-tags run -e TAGS=\"@regression\" --browser chrome",
+    "Booking-Regression": "npx cypress-tags run -e TAGS=\"@regression\" --headed --browser chrome",
     "Booking-InProgress": "npx cypress-tags run -e TAGS=\"@inProgress\" --headed --browser chrome",
     "Booking-Smoke": "npx cypress-tags run -e TAGS=\"@smoke\" --headed --browser chrome",
     "Booking-Regression-multi-browser": "npm run Booking-Regression -- --browser electron --headed & npm run Booking-Regression -- --browser chrome --headed",
