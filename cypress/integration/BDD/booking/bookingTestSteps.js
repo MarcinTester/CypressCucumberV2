@@ -130,7 +130,7 @@ Then('I can see all important page elements', function () {
     console.log($e1.text())
   })
   cy.get('a[class="bui-tab__link"]').should('be.visible').then(($e1) => {
-    expect($e1.eq(0).text()).to.includes('Flightstest')
+    expect($e1.eq(0).text()).to.includes('Flights')
     expect($e1.eq(1).text()).to.includes('Flight + Hotel')
     expect($e1.eq(2).text()).to.includes('Car rental')
     expect($e1.eq(3).text()).to.includes('Attractions')
