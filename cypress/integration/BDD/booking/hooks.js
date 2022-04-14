@@ -12,7 +12,6 @@ before(() => {
 afterEach(() => {
     cy.log('afterEach')
 })
-
 after(() => {
     cy.log('after')
 })
