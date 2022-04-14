@@ -1,0 +1,19 @@
+{
+  "chromeWebSecurity":false,
+  "defaultCommandTimeout": 20000,
+  "pageLoadTimeout": 30000,
+  "reporter": "mochawesome",
+  
+  "env": {
+    "testFiles": ["**/*.{feature,BDD}"]
+  },
+
+  "retries": {
+    
+    "runMode": 1
+  },
+  
+ 
+  
+  "projectId": "3smycb"
+}

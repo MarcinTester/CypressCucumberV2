@@ -1,0 +1,15 @@
+{
+ "name" :"bob",
+ "gender":"Female",
+ "productName": ["iphone X","Nokia Edge"],
+ "destination" :"Karp",
+ "fullDestination" :"Karpacz",
+ "arrivalDay": "10",
+ "departureDay": "21",
+ "numberOfAdults": "4",
+ "numberOfChildren": "4",
+ "numberOfRooms": "3",
+ "ageOfChildren": ["1","2","3","4","5","6","7","8","9"]
+
+
+}

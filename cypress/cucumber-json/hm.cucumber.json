@@ -1,0 +1,133 @@
+[
+  {
+    "description": "    application Regression",
+    "keyword": "Feature",
+    "name": "Search testing",
+    "line": 1,
+    "id": "search-testing",
+    "tags": [],
+    "uri": "hm.feature",
+    "elements": [
+      {
+        "id": "search-testing;add-to-bag-test",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add to bag test",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open HM Page",
+            "result": {
+              "status": "passed",
+              "duration": 5751000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I go to product PDP",
+            "result": {
+              "status": "passed",
+              "duration": 13126000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Add product to bag",
+            "result": {
+              "status": "failed",
+              "duration": 1380000000,
+              "error_message": "CypressError: `cy.click()` can only be called on a single element. Your subject contained 7 elements. Pass `{ multiple: true }` if you want to serially click each element.\n    at mouseAction (https://www.hm.com/__cypress/runner/cypress_runner.js:152539:76)\n    at Context.click (https://www.hm.com/__cypress/runner/cypress_runner.js:152718:14)\n    at Context.<anonymous> (https://www.hm.com/__cypress/runner/cypress_runner.js:173242:19)\nFrom Your Spec Code:\n    at Context.eval (https://www.hm.com/__cypress/tests?p=cypress\\integration\\BDD\\hm.feature:56:37)\n    at Context.resolveAndRunStepDefinition (https://www.hm.com/__cypress/tests?p=cypress\\integration\\BDD\\hm.feature:12318:29)\n    at Context.eval (https://www.hm.com/__cypress/tests?p=cypress\\integration\\BDD\\hm.feature:11663:35)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I can see item in the bag",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-testing;search-test",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Search test",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I open HM Page",
+            "result": {
+              "status": "passed",
+              "duration": 8669000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click on search button",
+            "result": {
+              "status": "passed",
+              "duration": 4266000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Provide product to search",
+            "result": {
+              "status": "passed",
+              "duration": 4845000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see search results for that product",
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Products have name and price displayed",
+            "result": {
+              "status": "passed",
+              "duration": 7428000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
