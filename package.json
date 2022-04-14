@@ -13,7 +13,6 @@
     "Booking-Smoke": "npx cypress-tags run -e TAGS=\"@smoke\" --headed --browser chrome",
     "Booking-Regression-multi-browser": "npm run Booking-Regression -- --browser electron --headed & npm run Booking-Regression -- --browser chrome --headed",
     "Booking-InProgress-multi-browser": "npm run Booking-InProgress -- --browser electron --headed & npm run Booking-InProgress -- --browser chrome --headed"
-    
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

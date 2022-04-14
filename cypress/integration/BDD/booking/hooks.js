@@ -9,8 +9,6 @@ cy.log("data")
 before(() => {
     cy.log('before')
 })
-
-
 afterEach(() => {
     cy.log('afterEach')
 })
