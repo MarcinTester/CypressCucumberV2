@@ -1,5 +1,10 @@
 @regression
 Feature: booking testing
+    @smoke
+    Scenario: HomePage visible elements test
+        Given I open booking.com Page
+        Then I can see all important page elements
+
     Scenario: Invalid email
         Given I open booking.com Page
         And I click Register button
@@ -9,10 +14,6 @@ Feature: booking testing
         And Click Continue with email
         Then I can see error message "Make sure the email address you entered is correct."
         And I'm still on Register page
-    @smoke
-    Scenario: HomePage visible elements test
-        Given I open booking.com Page
-        Then I can see all important page elements
 
     Scenario Outline: Full search test
         Given I open booking.com Page
