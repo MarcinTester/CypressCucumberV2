@@ -14,6 +14,8 @@ describe('apiTest', function () {
             headers: {
                 accept: "application/json"
             }
+
+            
         }).then(response => {
             let body = JSON.parse(JSON.stringify(response.body))
             cy.log(body)
