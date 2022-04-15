@@ -28,6 +28,7 @@ Feature: booking testing
             | Karpacz     | 14         | 22           | 5              | 5                | 5             |
             | Zakopane    | 9          | 15           | 1              | 2                | 2             |
 
+
     Scenario Outline: No arrival Data search test
         Given I open booking.com Page
         And I provide destination <destination>
