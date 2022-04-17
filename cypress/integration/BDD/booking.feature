@@ -5,8 +5,6 @@ Feature: booking testing
         Given I open booking.com Page
         Then I can see all important page elements
 
-
-
     Scenario: Invalid email
         Given I open booking.com Page
         And I click Register button
