@@ -7,8 +7,6 @@ Feature: booking testing
 
 
 
-
-
     Scenario: Invalid email
         Given I open booking.com Page
         And I click Register button
