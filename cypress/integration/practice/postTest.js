@@ -16,7 +16,6 @@ describe('PostTest', () => {
             expect(response.status).to.eql(201)
         })
     })
-    
     it('Validate title', () => {
         cy.request({
             method: "GET",
@@ -30,7 +29,7 @@ describe('PostTest', () => {
                 titleOfPosts.push(item["title"])
                 expect(response.status).to.eql(200)
             })
-        }).then(() => {
+        }).then(()=>{
             var lastestPost = titleOfPosts[titleOfPosts.length -1]
             cy.log(lastestPost)
             expect(lastestPost).to.eq(randomTitle)
