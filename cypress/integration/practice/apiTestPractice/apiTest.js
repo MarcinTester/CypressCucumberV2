@@ -2,6 +2,7 @@
 
 describe('apiTest', function () {
     var result
+    var titleOfPosts = new ArrayBuffer()
     it('apiTest Example', () => {
         result = cy.request("https://jsonplaceholder.typicode.com/posts");
         result.its("status").should("equal", 200)
@@ -42,6 +43,6 @@ describe('apiTest', function () {
                 cy.log(item["body"])
             })
         })
-
     })
 })
+
