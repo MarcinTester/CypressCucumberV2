@@ -36,7 +36,7 @@
             "name": "I open Automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1526000000
+              "duration": 1347000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "Login or register option is visible",
             "result": {
               "status": "passed",
-              "duration": 52000000
+              "duration": 43000000
             }
           }
         ]
@@ -71,7 +71,7 @@
             "name": "I open Automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1045000000
+              "duration": 1197000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "I register new user account",
             "result": {
               "status": "passed",
-              "duration": 7209000000
+              "duration": 6849000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 35000000
             }
           },
           {
@@ -101,7 +101,7 @@
             "name": "I am logged into new account",
             "result": {
               "status": "passed",
-              "duration": 1114000000
+              "duration": 965000000
             }
           }
         ]
@@ -126,7 +126,7 @@
             "name": "I open Automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1171000000
+              "duration": 897000000
             }
           },
           {
@@ -155,7 +155,7 @@
             "name": "I sign up with existing user",
             "result": {
               "status": "passed",
-              "duration": 3331000000
+              "duration": 3701000000
             }
           },
           {
@@ -165,7 +165,7 @@
             "name": "I'm logged in into accunt",
             "result": {
               "status": "passed",
-              "duration": 222000000
+              "duration": 210000000
             }
           },
           {
@@ -175,7 +175,7 @@
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 1339000000
+              "duration": 991000000
             }
           }
         ]
