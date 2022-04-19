@@ -36,7 +36,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 4350000000
+              "duration": 5383000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "I can see all important page elements",
             "result": {
               "status": "passed",
-              "duration": 537000000
+              "duration": 982000000
             }
           }
         ]
@@ -70,7 +70,8 @@
             "line": 9,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4475000000
             }
           },
           {
@@ -79,7 +80,8 @@
             "line": 10,
             "name": "I click Register button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3508000000
             }
           },
           {
@@ -103,7 +105,8 @@
             "line": 11,
             "name": "Provide invalid email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 414000000
             }
           },
           {
@@ -112,7 +115,8 @@
             "line": 14,
             "name": "Click Continue with email",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 257000000
             }
           },
           {
@@ -121,7 +125,8 @@
             "line": 15,
             "name": "I can see error message \"Make sure the email address you entered is correct.\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 125000000
             }
           },
           {
@@ -130,7 +135,8 @@
             "line": 16,
             "name": "I'm still on Register page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 243000000
             }
           }
         ]
@@ -158,7 +164,8 @@
             "line": 19,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3063000000
             }
           },
           {
@@ -167,7 +174,8 @@
             "line": 20,
             "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5193000000
             }
           },
           {
@@ -176,7 +184,8 @@
             "line": 21,
             "name": "Arrival 10 and departure day 11",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1472000000
             }
           },
           {
@@ -185,7 +194,8 @@
             "line": 22,
             "name": "Number of guests and rooms 5 4 4",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9090000000
             }
           },
           {
@@ -194,7 +204,8 @@
             "line": 23,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 15522000000
             }
           },
           {
@@ -203,7 +214,8 @@
             "line": 24,
             "name": "I can see proper search results Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 433000000
             }
           }
         ]
@@ -231,7 +243,8 @@
             "line": 19,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5563000000
             }
           },
           {
@@ -240,7 +253,8 @@
             "line": 20,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5180000000
             }
           },
           {
@@ -249,7 +263,8 @@
             "line": 21,
             "name": "Arrival 14 and departure day 22",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1729000000
             }
           },
           {
@@ -258,7 +273,8 @@
             "line": 22,
             "name": "Number of guests and rooms 5 5 5",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11268000000
             }
           },
           {
@@ -267,7 +283,8 @@
             "line": 23,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11011000000
             }
           },
           {
@@ -276,7 +293,8 @@
             "line": 24,
             "name": "I can see proper search results Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 209000000
             }
           }
         ]
@@ -300,7 +318,8 @@
             "line": 31,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18115000000
             }
           },
           {
@@ -309,7 +328,8 @@
             "line": 32,
             "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4616000000
             }
           },
           {
@@ -318,7 +338,8 @@
             "line": 33,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9380000000
             }
           },
           {
@@ -327,7 +348,8 @@
             "line": 34,
             "name": "Click Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2140000000
             }
           },
           {
@@ -336,7 +358,8 @@
             "line": 35,
             "name": "Calendar is visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 121000000
             }
           },
           {
@@ -345,7 +368,8 @@
             "line": 36,
             "name": "I stay in search page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 20000000
             }
           }
         ]
@@ -369,7 +393,8 @@
             "line": 31,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 19999000000
             }
           },
           {
@@ -378,7 +403,8 @@
             "line": 32,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7273000000
             }
           },
           {
@@ -387,7 +413,8 @@
             "line": 33,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7846000000
             }
           },
           {
@@ -396,7 +423,8 @@
             "line": 34,
             "name": "Click Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3186000000
             }
           },
           {
@@ -405,7 +433,8 @@
             "line": 35,
             "name": "Calendar is visible",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bui-calendar`, but never found it.\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:98:25)\n    at Context.resolveAndRunStepDefinition (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12701:29)\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12022:35)"
             }
           },
           {
@@ -438,7 +467,8 @@
             "line": 42,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3668000000
             }
           },
           {
@@ -447,7 +477,8 @@
             "line": 43,
             "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 6595000000
             }
           },
           {
@@ -456,7 +487,8 @@
             "line": 44,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11112000000
             }
           },
           {
@@ -465,7 +497,8 @@
             "line": 45,
             "name": "I can see proper search results Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 171000000
             }
           },
           {
@@ -474,7 +507,8 @@
             "line": 46,
             "name": "I can see Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 327000000
             }
           }
         ]
@@ -498,7 +532,8 @@
             "line": 42,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3717000000
             }
           },
           {
@@ -507,7 +542,8 @@
             "line": 43,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4171000000
             }
           },
           {
@@ -516,7 +552,8 @@
             "line": 44,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8306000000
             }
           },
           {
@@ -525,7 +562,8 @@
             "line": 45,
             "name": "I can see proper search results Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 333000000
             }
           },
           {
@@ -534,7 +572,8 @@
             "line": 46,
             "name": "I can see Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 457000000
             }
           }
         ]
