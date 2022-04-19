@@ -1,15 +1,18 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
-
+import StoreHomePage_PO from '../../../support/pageObjects/testStore/StoreHomePage_PO'
 /// <reference types="Cypress" />
 
 Given('I open Automationteststore.com Page', function () {
-    cy.visit("https://automationteststore.com/")
+  //  const homePage = new HomePage_PO()
+   // homePage.visitHomePage()
+   StoreHomePage_PO.visitHomePage()
 })
 Then('Login or register option is visible', function () {
-    cy.get(".navbar").contains("Login or register").should("be.visible")
+    StoreHomePage_PO.loginOrRegisterButton().should("be.visible").and("contain", "Login or register")
 })
 When('I Click Login or register', function () {
-    cy.get(".navbar").contains("Login or register").click()
+ 
+    StoreHomePage_PO.loginOrRegisterButton().click()
 })
 When('I register new user account', function () {
     cy.get(".navbar").contains("Login or register").click()

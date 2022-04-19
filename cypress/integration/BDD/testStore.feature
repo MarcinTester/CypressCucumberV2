@@ -1,10 +1,6 @@
 @regression
 Feature: automationteststore testing
     @smoke
-    Scenario: Automationteststore.com home page check
-        Given I open Automationteststore.com Page
-        Then Login or register option is visible
-
     Scenario: Register new user
         Given I open Automationteststore.com Page
         When I register new user account
