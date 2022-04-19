@@ -58,4 +58,7 @@ class RegistrationPage_PO {
     static invalidUserErrorMessage() {
         return cy.get(".alert")
     }
+    static invalidUserErrorMessageCheck(errorMessage) {
+        cy.get(".alert").should("be.visible").and("contain", errorMessage)
+    }
 } export default RegistrationPage_PO
