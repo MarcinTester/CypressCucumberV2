@@ -1,11 +1,5 @@
 @regression
 Feature: automationteststore testing
-    Scenario: Register new user
-        Given I open automationteststore.com Page
-        And Navigate to Login or register page
-        When I register new account
-        Then New account is created
-        And I am logged into new account
     @smoke
     Scenario: Login into account
         Given I open automationteststore.com Page
@@ -14,6 +8,13 @@ Feature: automationteststore testing
             | test129129129 | test1    |
         Then I'm logged into account
         And I can log out from account
+        
+    Scenario: Register new user
+        Given I open automationteststore.com Page
+        And Navigate to Login or register page
+        When I register new account
+        Then New account is created
+        And I am logged into new account
 
     Scenario: Login into account with invalid user
         Given I open automationteststore.com Page
