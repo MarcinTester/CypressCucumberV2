@@ -1,10 +1,10 @@
 beforeEach(()=>
 {
-    cy.fixture('examples').then(function(data)
+    cy.fixture('examplesStore').then(function(data)
     {
 this.data=data
 
-cy.log("data")
+cy.log("userLogin: " + this.data.userLogin)
     })
 })
 before(() => {
