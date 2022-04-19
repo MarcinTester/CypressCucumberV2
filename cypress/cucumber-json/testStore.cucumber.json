@@ -13,71 +13,6 @@
     "uri": "testStore.feature",
     "elements": [
       {
-        "id": "automationteststore-testing;register-new-user",
-        "keyword": "Scenario",
-        "line": 3,
-        "name": "Register new user",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 4,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 3589000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 5,
-            "name": "Navigate to Login or register page",
-            "result": {
-              "status": "passed",
-              "duration": 2681000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "I register new account",
-            "result": {
-              "status": "passed",
-              "duration": 9029000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "New account is created",
-            "result": {
-              "status": "passed",
-              "duration": 77000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 8,
-            "name": "I am logged into new account",
-            "result": {
-              "status": "passed",
-              "duration": 1543000000
-            }
-          }
-        ]
-      },
-      {
         "id": "automationteststore-testing;login-into-account",
         "keyword": "Scenario",
         "line": 10,
@@ -101,7 +36,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1439000000
+              "duration": 2781000000
             }
           },
           {
@@ -128,7 +63,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 3996000000
+              "duration": 4546000000
             }
           },
           {
@@ -138,7 +73,7 @@
             "name": "I'm logged into account",
             "result": {
               "status": "passed",
-              "duration": 326000000
+              "duration": 368000000
             }
           },
           {
@@ -148,7 +83,7 @@
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 2013000000
+              "duration": 1295000000
             }
           }
         ]
@@ -172,8 +107,7 @@
             "line": 19,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 1357000000
+              "status": "skipped"
             }
           },
           {
@@ -199,8 +133,7 @@
             "line": 20,
             "name": "I sign up with user",
             "result": {
-              "status": "passed",
-              "duration": 4588000000
+              "status": "skipped"
             }
           },
           {
@@ -209,8 +142,7 @@
             "line": 23,
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
-              "status": "passed",
-              "duration": 87000000
+              "status": "skipped"
             }
           }
         ]
