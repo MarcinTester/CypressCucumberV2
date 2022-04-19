@@ -51,24 +51,3 @@ Feature: booking testing
             | destination |
             | Warsaw      |
             | Karpacz     |
-
-
-
-
-# Scenario Outline: Full search test
-# Given I open booking.com Page
-# When I provide destination <destination>
-# And Arrival <arrivalDay> and departure day <departureDay>
-# And Number of guests and rooms <numberOfAdults> <numberOfRooms>
-# And Age of Children
-# |Age|
-# |1|
-# |2|
-# |3|
-# And Click search button
-# Then I can see proper search results <destination>
-# And See availability buttons
-# Examples:
-#     | destination | arrivalDay | departureDay | numberOfAdults | numberOfChildren | numberOfRooms |
-#     | Warsaw      | 10         | 11           | 5              | 4                | 4             |
-

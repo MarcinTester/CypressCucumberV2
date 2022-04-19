@@ -28,7 +28,7 @@ And('I am logged into new account', function () {
 And('I sign up with user', function (table) {
     HomePage_PO.signIn(table)
 })
-Then('I\'m logged in into account', function (table) {
+Then('I\'m logged into account', function () {
     AccountPage_PO.myAccountHeader().should("be.visible").and("contain", "My Account")
     AccountPage_PO.accountOptions().its('length').should('eq', 9)
     AccountPage_PO.userName().should("be.visible").and("contain", "test")
@@ -37,6 +37,6 @@ And('I can log out from account', function () {
     AccountPage_PO.logOffButton().click()
     AccountPage_PO.logoutHeader().should("be.visible").and("contain", "Account Logout")
 })
-Then('I can see error message', function () {
-    RegistrationPage_PO.invalidUserErrorMessage().should("be.visible").and("contain", "Error: Incorrect login or password provided.")
+Then('I can see error message: {string}', function (errorMessage) {
+    RegistrationPage_PO.invalidUserErrorMessageCheck(errorMessage)
 })
