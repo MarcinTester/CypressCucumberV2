@@ -1,0 +1,185 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "automationteststore testing",
+    "line": 2,
+    "id": "automationteststore-testing",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "testStore.feature",
+    "elements": [
+      {
+        "id": "automationteststore-testing;automationteststore.com-home-page-check",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Automationteststore.com home page check",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1526000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Login or register option is visible",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore-testing;register-new-user",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Register new user",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I open Automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1045000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I register new user account",
+            "result": {
+              "status": "passed",
+              "duration": 7209000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "New account is created",
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "I am logged into new account",
+            "result": {
+              "status": "passed",
+              "duration": 1114000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore-testing;login-into-account",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Login into account",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open Automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1171000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userLogin",
+                      "password",
+                      "userName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test129129129",
+                      "test1",
+                      "test"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I sign up with existing user",
+            "result": {
+              "status": "passed",
+              "duration": 3331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I'm logged in into accunt",
+            "result": {
+              "status": "passed",
+              "duration": 222000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I can log out from account",
+            "result": {
+              "status": "passed",
+              "duration": 1339000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
