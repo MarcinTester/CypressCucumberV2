@@ -1,58 +1,35 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import StoreHomePage_PO from '../../../support/pageObjects/testStore/StoreHomePage_PO'
+import RegistrationPage_PO from '../../../support/pageObjects/testStore/RegistrationPage_PO'
+import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
 /// <reference types="Cypress" />
 
 Given('I open Automationteststore.com Page', function () {
-  //  const homePage = new HomePage_PO()
-   // homePage.visitHomePage()
-   StoreHomePage_PO.visitHomePage()
+    StoreHomePage_PO.visitHomePage()
 })
 Then('Login or register option is visible', function () {
     StoreHomePage_PO.loginOrRegisterButton().should("be.visible").and("contain", "Login or register")
 })
-When('I Click Login or register', function () {
- 
+When('Navigate to Login or register page', function () {
     StoreHomePage_PO.loginOrRegisterButton().click()
+    RegistrationPage_PO.continueButton().click()
 })
-When('I register new user account', function () {
-    cy.get(".navbar").contains("Login or register").click()
-    cy.get('[title="Continue"]').click()
-    let userFirstName = "test_" + Math.random().toString(30).substring(2)
-    let userLastName = "test_" + Math.random().toString(30).substring(2)
-    let userEmail = userFirstName + "@gmail.com"
-    cy.get('#AccountFrm_firstname').type(userFirstName)
-    cy.get('#AccountFrm_lastname').type(userLastName)
-    cy.get('#AccountFrm_email').type(userEmail)
-    cy.get('#AccountFrm_address_1').type("Address")
-    cy.get('#AccountFrm_city').type("City")
-    cy.get('#AccountFrm_zone_id').select("Durham")
-    cy.get('#AccountFrm_postcode').type("123")
-    cy.get('#AccountFrm_loginname').type(userFirstName)
-    cy.get('#AccountFrm_password').type("test1")
-    cy.get('#AccountFrm_confirm').type("test1")
-    cy.get('#AccountFrm_agree').check()
-    cy.get('.btn').contains("Continue").click()
+When('I register new account', function () {
+    RegistrationPage_PO.registerRandomUserAccount()
 })
 Then('New account is created', function () {
     cy.get(".maintext").should("contain", "Your Account Has Been Created!")
 })
 And('I am logged into new account', function () {
-    cy.get('.btn').contains("Continue").click()
-    cy.get('.maintext').should("be.visible").and("contain", "My Account")
-    cy.get('.heading2 > span').should("be.visible").and("contain", "My Account")
-    cy.get('.nav-dash > li').its('length').should('eq', 9)
+    AccountPage_PO.continueButton().click()
+    AccountPage_PO.myAccountHeader().should("be.visible").and("contain", "My Account")
+    AccountPage_PO.accountOptions().its('length').should('eq', 9)
 })
 And('Click continue button on Login or register page', function () {
     cy.get('[title="Continue"]').click()
 })
-And('Provide all required Personal Details', function () {
-    let userName = "test_" + Math.random().toString(30).substring(2)
-    cy.get('#AccountFrm_firstname').type(userName)
-})
 And('I sign up with existing user', function (table) {
     cy.get(".navbar").contains("Login or register").click()
-    // cy.get("#loginFrm_loginname").type("test129129129")
-    // cy.get("#loginFrm_password").type("test1")
     table.hashes().forEach(row => {
         cy.get("#loginFrm_loginname").type(row.userLogin)
         cy.get("#loginFrm_password").type(row.password)

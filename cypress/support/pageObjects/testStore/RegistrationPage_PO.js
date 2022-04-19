@@ -1,11 +1,5 @@
-class StoreHomePage_PO {
-    static visitHomePage() {
-        return cy.visit("https://automationteststore.com/")
-    }
-    static loginOrRegisterButton() {
-        return cy.get(".navbar").contains("Login or register")
-    }
-    static registerNewAccount() {
+class RegistrationPage_PO {
+    static registerRandomUserAccount() {
         let FirstName = "test_" + Math.random().toString(30).substring(2)
         let LastName = "test_" + Math.random().toString(30).substring(2)
         let Email = FirstName + "@gmail.com"
@@ -22,4 +16,7 @@ class StoreHomePage_PO {
         cy.get('#AccountFrm_agree').check()
         cy.get('.btn').contains("Continue").click()
     }
-} export default StoreHomePage_PO
+    static continueButton() {
+        return cy.get('[title="Continue"]')
+    }
+} export default RegistrationPage_PO
