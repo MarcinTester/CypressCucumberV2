@@ -1,7 +1,7 @@
 {
   "chromeWebSecurity":false,
-  "defaultCommandTimeout": 5000,
-  "pageLoadTimeout": 5000,
+  "defaultCommandTimeout": 15000,
+  "pageLoadTimeout": 15000,
   "reporter": "mochawesome",
   
   "env": {

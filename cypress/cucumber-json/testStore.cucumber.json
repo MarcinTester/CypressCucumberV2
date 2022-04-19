@@ -15,16 +15,12 @@
       {
         "id": "automationteststore-testing;register-new-user",
         "keyword": "Scenario",
-        "line": 4,
+        "line": 3,
         "name": "Register new user",
         "tags": [
           {
             "name": "@regression",
             "line": 1
-          },
-          {
-            "name": "@smoke",
-            "line": 3
           }
         ],
         "type": "scenario",
@@ -32,51 +28,51 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1184000000
+              "duration": 3589000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 6,
+            "line": 5,
             "name": "Navigate to Login or register page",
             "result": {
               "status": "passed",
-              "duration": 1672000000
+              "duration": 2681000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 7,
+            "line": 6,
             "name": "I register new account",
             "result": {
               "status": "passed",
-              "duration": 4935000000
+              "duration": 9029000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 7,
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 51000000
+              "duration": 77000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 9,
+            "line": 8,
             "name": "I am logged into new account",
             "result": {
               "status": "passed",
-              "duration": 862000000
+              "duration": 1543000000
             }
           }
         ]
@@ -84,12 +80,16 @@
       {
         "id": "automationteststore-testing;login-into-account",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 10,
         "name": "Login into account",
         "tags": [
           {
             "name": "@regression",
             "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 9
           }
         ],
         "type": "scenario",
@@ -97,11 +97,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 12,
+            "line": 11,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 961000000
+              "duration": 1439000000
             }
           },
           {
@@ -124,31 +124,31 @@
               }
             ],
             "keyword": "When ",
-            "line": 13,
+            "line": 12,
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 2277000000
+              "duration": 3996000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
+            "line": 15,
             "name": "I'm logged into account",
             "result": {
               "status": "passed",
-              "duration": 142000000
+              "duration": 326000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 17,
+            "line": 16,
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 833000000
+              "duration": 2013000000
             }
           }
         ]
@@ -156,7 +156,7 @@
       {
         "id": "automationteststore-testing;login-into-account-with-invalid-user",
         "keyword": "Scenario",
-        "line": 19,
+        "line": 18,
         "name": "Login into account with invalid user",
         "tags": [
           {
@@ -169,11 +169,11 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 20,
+            "line": 19,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 855000000
+              "duration": 1357000000
             }
           },
           {
@@ -196,21 +196,21 @@
               }
             ],
             "keyword": "When ",
-            "line": 21,
+            "line": 20,
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 2319000000
+              "duration": 4588000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 24,
+            "line": 23,
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
               "status": "passed",
-              "duration": 63000000
+              "duration": 87000000
             }
           }
         ]

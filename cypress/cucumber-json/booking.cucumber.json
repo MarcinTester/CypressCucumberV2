@@ -15,7 +15,7 @@
       {
         "id": "booking-testing;homepage-visible-elements-test",
         "keyword": "Scenario",
-        "line": 13,
+        "line": 4,
         "name": "HomePage visible elements test",
         "tags": [
           {
@@ -24,7 +24,7 @@
           },
           {
             "name": "@smoke",
-            "line": 12
+            "line": 3
           }
         ],
         "type": "scenario",
@@ -32,21 +32,111 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 5,
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 4155000000
+              "duration": 4224000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I can see all important page elements",
+            "result": {
+              "status": "passed",
+              "duration": 665000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "booking-testing;invalid-email",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Invalid email",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I open booking.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 5800000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click Register button",
+            "result": {
+              "status": "passed",
+              "duration": 3379000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "qwer"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Provide invalid email",
+            "result": {
+              "status": "passed",
+              "duration": 323000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Click Continue with email",
+            "result": {
+              "status": "passed",
+              "duration": 378000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 15,
-            "name": "I can see all important page elements",
+            "name": "I can see error message \"Make sure the email address you entered is correct.\"",
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 118000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I'm still on Register page",
+            "result": {
+              "status": "passed",
+              "duration": 196000000
             }
           }
         ]
@@ -60,6 +150,10 @@
           {
             "name": "@regression",
             "line": 1
+          },
+          {
+            "name": "@inProgress",
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -67,64 +161,61 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 19,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2849000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
+            "line": 20,
             "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Arrival 10 and departure day 11",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4559000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Number of guests and rooms 5 4 4",
+            "name": "Arrival 10 and departure day 11",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1090000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Click search button",
+            "name": "Number of guests and rooms 5 4 4",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "I can see proper search results Warsaw",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 11194000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
-            "name": "See availability buttons",
+            "line": 23,
+            "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 7641000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I can see proper search results Warsaw",
+            "result": {
+              "status": "passed",
+              "duration": 110000000
             }
           }
         ]
@@ -138,6 +229,10 @@
           {
             "name": "@regression",
             "line": 1
+          },
+          {
+            "name": "@inProgress",
+            "line": 17
           }
         ],
         "type": "scenario",
@@ -145,73 +240,70 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 19,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3613000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
+            "line": 20,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 20,
-            "name": "Arrival 14 and departure day 22",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4533000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "Number of guests and rooms 5 5 5",
+            "name": "Arrival 14 and departure day 22",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1736000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 22,
-            "name": "Click search button",
+            "name": "Number of guests and rooms 5 5 5",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 23,
-            "name": "I can see proper search results Karpacz",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9611000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
-            "name": "See availability buttons",
+            "line": 23,
+            "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 10100000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I can see proper search results Karpacz",
+            "result": {
+              "status": "passed",
+              "duration": 168000000
             }
           }
         ]
       },
       {
-        "id": "booking-testing;full-search-test",
+        "id": "booking-testing;no-arrival-data-search-test",
         "keyword": "Scenario",
-        "line": 29,
-        "name": "Full search test",
+        "line": 39,
+        "name": "No arrival Data search test",
         "tags": [
           {
             "name": "@regression",
@@ -223,64 +315,61 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 31,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I provide destination Zakopane",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5118000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 20,
-            "name": "Arrival 9 and departure day 15",
+            "line": 32,
+            "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 4779000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 21,
-            "name": "Number of guests and rooms 1 2 2",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
+            "line": 33,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8895000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "Click Show prices button",
+            "result": {
+              "status": "passed",
+              "duration": 1633000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
-            "name": "I can see proper search results Zakopane",
+            "line": 35,
+            "name": "Calendar is visible",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 27000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
-            "name": "See availability buttons",
+            "line": 36,
+            "name": "I stay in search page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 16000000
             }
           }
         ]
@@ -301,121 +390,57 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 32,
+            "line": 31,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 18733000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "I provide destination Warsaw",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 34,
-            "name": "Click search button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
-            "name": "Click Show prices button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "Calendar is visible",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "I stay in search page",
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "booking-testing;no-arrival-data-search-test",
-        "keyword": "Scenario",
-        "line": 41,
-        "name": "No arrival Data search test",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
             "line": 32,
-            "name": "I open booking.com Page",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 33,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5492000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Click search button",
+            "result": {
+              "status": "passed",
+              "duration": 7268000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 34,
-            "name": "Click search button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 35,
             "name": "Click Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 2947000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 36,
+            "line": 35,
             "name": "Calendar is visible",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bui-calendar`, but never found it.\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:98:25)\n    at Context.resolveAndRunStepDefinition (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12701:29)\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12022:35)"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 37,
+            "line": 36,
             "name": "I stay in search page",
             "result": {
               "status": "skipped"
@@ -426,16 +451,12 @@
       {
         "id": "booking-testing;destination-search-test",
         "keyword": "Scenario",
-        "line": 51,
+        "line": 49,
         "name": "Destination search test",
         "tags": [
           {
             "name": "@regression",
             "line": 1
-          },
-          {
-            "name": "@inProgress",
-            "line": 42
           }
         ],
         "type": "scenario",
@@ -443,46 +464,51 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 44,
+            "line": 42,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3108000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 45,
+            "line": 43,
             "name": "I provide destination Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 3868000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 46,
+            "line": 44,
             "name": "Click search button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 8103000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 47,
+            "line": 45,
             "name": "I can see proper search results Warsaw",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 213000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 48,
+            "line": 46,
             "name": "I can see Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 514000000
             }
           }
         ]
@@ -490,16 +516,12 @@
       {
         "id": "booking-testing;destination-search-test",
         "keyword": "Scenario",
-        "line": 52,
+        "line": 50,
         "name": "Destination search test",
         "tags": [
           {
             "name": "@regression",
             "line": 1
-          },
-          {
-            "name": "@inProgress",
-            "line": 42
           }
         ],
         "type": "scenario",
@@ -507,46 +529,51 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 44,
+            "line": 42,
             "name": "I open booking.com Page",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5237000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 45,
+            "line": 43,
             "name": "I provide destination Karpacz",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5588000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "Click search button",
+            "result": {
+              "status": "passed",
+              "duration": 8462000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I can see proper search results Karpacz",
+            "result": {
+              "status": "passed",
+              "duration": 198000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 46,
-            "name": "Click search button",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 47,
-            "name": "I can see proper search results Karpacz",
-            "result": {
-              "status": "skipped"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 48,
             "name": "I can see Show prices button",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 443000000
             }
           }
         ]

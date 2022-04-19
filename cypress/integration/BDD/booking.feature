@@ -14,7 +14,7 @@ Feature: booking testing
         And Click Continue with email
         Then I can see error message "Make sure the email address you entered is correct."
         And I'm still on Register page
-
+@inProgress
     Scenario Outline: Full search test
         Given I open booking.com Page
         When I provide destination <destination>
@@ -22,12 +22,10 @@ Feature: booking testing
         And Number of guests and rooms <numberOfAdults> <numberOfChildren> <numberOfRooms>
         And Click search button
         Then I can see proper search results <destination>
-        And See availability buttons
         Examples:
             | destination | arrivalDay | departureDay | numberOfAdults | numberOfChildren | numberOfRooms |
             | Warsaw      | 10         | 11           | 5              | 4                | 4             |
             | Karpacz     | 14         | 22           | 5              | 5                | 5             |
-            | Zakopane    | 9          | 15           | 1              | 2                | 2             |
 
     Scenario Outline: No arrival Data search test
         Given I open booking.com Page
@@ -40,7 +38,6 @@ Feature: booking testing
             | destination |
             | Warsaw      |
             | Karpacz     |
-    @inProgress
     Scenario Outline: Destination search test
         Given I open booking.com Page
         And I provide destination <destination>

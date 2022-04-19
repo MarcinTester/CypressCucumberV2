@@ -25,23 +25,6 @@ And('Number of guests and rooms {word} {word} {word}', function (numberOfAdults,
   homePage.selectAgeOfChildren(this.data.ageOfChildren)
   homePage.selectNumberOfRooms(numberOfRooms)
 })
-// And('Age of Children', function (table) {
-//   const homePage = new HomePage_PO()
-//   table.hashes().forEach(row =>{
-//     cy.get('span[class="bui-stepper__display"]').eq(1).then((element) => {
-//       const numberOfChildren = element.text()
-//       times(numberOfChildren, (index) => {
-//           console.log("index: " + index)
-//           cy.get('select[name="age"]').eq(index).select(row.Age[0][1])
-//       })
-//   })
-// })
-// })
-
-
-
-
-
 And('Click search button', function () {
   const homePage = new HomePage_PO()
   homePage.searchButton().click()
@@ -78,7 +61,7 @@ And('I click Register button', function () {
 })
 And('Provide invalid email', function (table) {
   const registerPage = new RegisterPage_PO()
-  table.hashes().forEach(row =>{
+  table.hashes().forEach(row => {
     registerPage.emailTextBox().type(row.email)
   })
 })
