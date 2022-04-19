@@ -10,14 +10,14 @@ report.generate({
         },
         device: 'Local test machine',
         platform: {
-            name: 'ubuntu',
+            name: 'Windows 10',
             version: '16.04'
         }
     },
     customData: {
         title: 'Run info',
         data: [
-            {label: 'Project', value: 'Custom project'},
+            {label: 'Project', value: 'Cypress practice project'},
             {label: 'Release', value: '1.2.3'},
             {label: 'Cycle', value: 'B11221.34321'},
             {label: 'Execution Start Time', value: 'Nov 19th 2022, 02:31 PM EST'},

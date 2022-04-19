@@ -36,7 +36,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1441000000
+              "duration": 2162000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "Navigate to Login or register page",
             "result": {
               "status": "passed",
-              "duration": 1680000000
+              "duration": 1584000000
             }
           },
           {
@@ -56,7 +56,7 @@
             "name": "I register new account",
             "result": {
               "status": "passed",
-              "duration": 5868000000
+              "duration": 6329000000
             }
           },
           {
@@ -66,7 +66,7 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 44000000
+              "duration": 87000000
             }
           },
           {
@@ -75,8 +75,143 @@
             "line": 9,
             "name": "I am logged into new account",
             "result": {
+              "status": "failed",
+              "duration": 16109000000,
+              "error_message": "AssertionError: Timed out retrying after 15000ms: expected 9 to equal 91\n    + expected - actual\n\n    -9\n    +91\n\n    [3]</<@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:90:61\n    resolveAndRunStepDefinition@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12576:29\n    stepTest/<@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:11897:35\n    getRet@https://automationteststore.com/__cypress/runner/cypress_runner.js:156299:20\n    tryCatcher@https://automationteststore.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://automationteststore.com/__cypress/runner/cypress_runner.js:10296:29\n    thenFn@https://automationteststore.com/__cypress/runner/cypress_runner.js:156317:60\n    then@https://automationteststore.com/__cypress/runner/cypress_runner.js:156769:21\n    ../driver/src/cypress/cy.ts/addCommand/wrapByType/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:173267:19\n    ../driver/src/cypress/command_queue.ts/runCommand/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:172123:15\n    tryCatcher@https://automationteststore.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://automationteststore.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://automationteststore.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@https://automationteststore.com/__cypress/runner/cypress_runner.js:11051:10\n    _drainQueueStep@https://automationteststore.com/__cypress/runner/cypress_runner.js:7733:12\n    _drainQueue@https://automationteststore.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://automationteststore.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://automationteststore.com/__cypress/runner/cypress_runner.js:7608:14\n"
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore-testing;login-into-account",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Login into account",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open automationteststore.com Page",
+            "result": {
               "status": "passed",
-              "duration": 1186000000
+              "duration": 1899000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userLogin",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test129129129",
+                      "test1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I sign up with user",
+            "result": {
+              "status": "passed",
+              "duration": 9609000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I'm logged in into account",
+            "result": {
+              "status": "passed",
+              "duration": 547000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I can log out from account",
+            "result": {
+              "status": "passed",
+              "duration": 2372000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore-testing;login-into-account-with-invalid-user",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Login into account with invalid user",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1794000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userLogin",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "invalidUser",
+                      "test1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I sign up with user",
+            "result": {
+              "status": "passed",
+              "duration": 4082000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I can see error message",
+            "result": {
+              "status": "passed",
+              "duration": 112000000
             }
           }
         ]

@@ -23,7 +23,7 @@ Then('New account is created', function () {
 And('I am logged into new account', function () {
     AccountPage_PO.continueButton().click()
     AccountPage_PO.myAccountHeader().should("be.visible").and("contain", "My Account")
-    AccountPage_PO.accountOptions().its('length').should('eq', 9)
+    AccountPage_PO.accountOptions().its('length').should('eq', 91)
 })
 And('I sign up with user', function (table) {
     HomePage_PO.signIn(table)
