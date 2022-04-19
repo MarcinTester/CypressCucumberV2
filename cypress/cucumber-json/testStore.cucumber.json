@@ -66,7 +66,9 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
+
               "duration": 87000000
+
             }
           },
           {

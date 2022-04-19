@@ -13,7 +13,7 @@ Feature: automationteststore testing
         When I sign up with user
             | userLogin     | password |
             | test129129129 | test1    |
-        Then I'm logged in into account
+        Then I'm logged into account
         And I can log out from account
 
     Scenario: Login into account with invalid user
@@ -21,6 +21,7 @@ Feature: automationteststore testing
         When I sign up with user
             | userLogin   | password |
             | invalidUser | test1    |
-        Then I can see error message
+        Then I can see error message: "Error: Incorrect login or password provided"
+
 
 
