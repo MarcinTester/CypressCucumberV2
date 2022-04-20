@@ -7,14 +7,19 @@ import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_P
 Given('I open automationteststore.com Page', function () {
     HomePage_PO.visitHomePage()
 })
+Then('I land on home page', function () {
+    HomePage_PO.homePageElementsCheck
+})
 Then('Login or register option is visible', function () {
     HomePage_PO.loginOrRegisterButton().should("be.visible").and("contain", "Login or register")
 })
-When('Navigate to Login or register page', function () {
+Given('Navigate to Login or register page', function () {
     HomePage_PO.loginOrRegisterButton().click()
     RegistrationPage_PO.continueButton().click()
 })
 When('I register new account', function () {
+    HomePage_PO.loginOrRegisterButton().click()
+    RegistrationPage_PO.continueButton().click()
     RegistrationPage_PO.registerRandomUserAccount()
 })
 Then('New account is created', function () {

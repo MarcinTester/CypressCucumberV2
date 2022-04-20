@@ -1,6 +1,10 @@
 @regression
 Feature: automationteststore testing
     @smoke
+    Scenario: Open Home Page
+        Given I open automationteststore.com Page
+        Then I land on home page
+
     Scenario: Login into account
         Given I open automationteststore.com Page
         When I sign up with user
@@ -8,13 +12,6 @@ Feature: automationteststore testing
             | test129129129 | test1    |
         Then I'm logged into account
         And I can log out from account
-        
-    Scenario: Register new user
-        Given I open automationteststore.com Page
-        And Navigate to Login or register page
-        When I register new account
-        Then New account is created
-        And I am logged into new account
 
     Scenario: Login into account with invalid user
         Given I open automationteststore.com Page
@@ -23,4 +20,9 @@ Feature: automationteststore testing
             | invalidUser | test1    |
         Then I can see error message: "Error: Incorrect login or password provided"
 
+    Scenario: Register new user
+        Given I open automationteststore.com Page
+        When I register new account
+        Then New account is created
+        And I am logged into new account
 

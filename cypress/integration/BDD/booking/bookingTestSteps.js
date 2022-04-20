@@ -9,6 +9,14 @@ Given('I open booking.com Page', function () {
   const homePage = new HomePage_PO()
   homePage.visitHomePage()
 })
+Then('I land on home page', function () {
+  const homePage = new HomePage_PO()
+  homePage.homeButton().should('be.visible')
+  homePage.currencyButton().should('be.visible')
+  homePage.searchButton().should('be.visible')
+  homePage.searchBox().should('be.visible')
+  homePage.datePicker().should('be.visible')
+})
 When('I provide destination {word}', function (destination) {
   const homePage = new HomePage_PO()
   homePage.selectDestination(destination)
@@ -79,6 +87,10 @@ And('I\'m still on Register page', function () {
   registerPage.continueWithEmailButton().should('be.visible')
   registerPage.incorrectEmailErrorMessage().should('be.visible')
 })
+
+
+
+
 
 
 

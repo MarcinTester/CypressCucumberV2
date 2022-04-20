@@ -1,9 +1,9 @@
 @regression
 Feature: booking testing
     @smoke
-    Scenario: HomePage visible elements test
+    Scenario: Open Home Page
         Given I open booking.com Page
-        Then I can see all important page elements
+        Then I land on home page
 
     Scenario: Invalid email
         Given I open booking.com Page

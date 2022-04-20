@@ -1,5 +1,8 @@
 import { times } from 'lodash'
 class HomePage_PO {
+    visitHomePage() {
+        cy.visit("https://www.booking.com/")
+    }
     searchButton() {
         return cy.get('button[class="sb-searchbox__button "]')
     }
@@ -9,14 +12,14 @@ class HomePage_PO {
     currencyButton() {
         return cy.get('button[data-modal-header-async-type="currencyDesktop"]')
     }
-    currencyButton() {
-        return cy.get('button[data-modal-header-async-type="currencyDesktop"]')
-    }
     registerButton() {
         return cy.get("a[class='bui-button bui-button--secondary js-header-login-link']").eq(0)
     }
-    visitHomePage() {
-        cy.visit("https://www.booking.com/")
+    searchBox() {
+        return cy.get("#ss")
+    }
+    datePicker() {
+        return cy.get(".xp__dates")
     }
     selectDestination(destination) {
         cy.get("input[id='ss']").type(destination)

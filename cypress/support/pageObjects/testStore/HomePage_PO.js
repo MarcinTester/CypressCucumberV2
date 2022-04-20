@@ -7,6 +7,20 @@ class HomePage_PO {
     static loginOrRegisterButton() {
         return cy.get(".navbar").contains("Login or register")
     }
+    static homeButton(){
+        return cy.get(".logo")
+    }
+    static currencyMenu(){
+        return cy.get(".block_6 > .nav > .dropdown > .dropdown-toggle")
+    }
+    static searchField(){
+        return cy.get("#filter_keyword")
+    }
+    static homePageElementsCheck(){
+        this.homeButton().should("be.visible")
+        this.currencyMenu().should("be.visible")
+        this.searchField().should("be.visible")
+    }
     static signIn(table) {
         cy.get(".navbar").contains("Login or register").click()
         table.hashes().forEach(row => {

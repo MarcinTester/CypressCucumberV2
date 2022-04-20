@@ -13,10 +13,10 @@
     "uri": "booking.feature",
     "elements": [
       {
-        "id": "booking-testing;homepage-visible-elements-test",
+        "id": "booking-testing;open-home-page",
         "keyword": "Scenario",
         "line": 4,
-        "name": "HomePage visible elements test",
+        "name": "Open Home Page",
         "tags": [
           {
             "name": "@regression",
@@ -36,17 +36,17 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 5383000000
+              "duration": 1661000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "I can see all important page elements",
+            "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 982000000
+              "duration": 201000000
             }
           }
         ]
@@ -71,7 +71,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 4475000000
+              "duration": 2064000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "I click Register button",
             "result": {
               "status": "passed",
-              "duration": 3508000000
+              "duration": 1496000000
             }
           },
           {
@@ -106,7 +106,7 @@
             "name": "Provide invalid email",
             "result": {
               "status": "passed",
-              "duration": 414000000
+              "duration": 320000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "Click Continue with email",
             "result": {
               "status": "passed",
-              "duration": 257000000
+              "duration": 151000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I can see error message \"Make sure the email address you entered is correct.\"",
             "result": {
               "status": "passed",
-              "duration": 125000000
+              "duration": 72000000
             }
           },
           {
@@ -136,86 +136,7 @@
             "name": "I'm still on Register page",
             "result": {
               "status": "passed",
-              "duration": 243000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "booking-testing;full-search-test",
-        "keyword": "Scenario",
-        "line": 27,
-        "name": "Full search test",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          },
-          {
-            "name": "@inProgress",
-            "line": 17
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 19,
-            "name": "I open booking.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 3063000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I provide destination Warsaw",
-            "result": {
-              "status": "passed",
-              "duration": 5193000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 21,
-            "name": "Arrival 10 and departure day 11",
-            "result": {
-              "status": "passed",
-              "duration": 1472000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 22,
-            "name": "Number of guests and rooms 5 4 4",
-            "result": {
-              "status": "passed",
-              "duration": 9090000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 23,
-            "name": "Click search button",
-            "result": {
-              "status": "passed",
-              "duration": 15522000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "I can see proper search results Warsaw",
-            "result": {
-              "status": "passed",
-              "duration": 433000000
+              "duration": 125000000
             }
           }
         ]
@@ -244,7 +165,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 5563000000
+              "duration": 4195000000
             }
           },
           {
@@ -254,7 +175,7 @@
             "name": "I provide destination Karpacz",
             "result": {
               "status": "passed",
-              "duration": 5180000000
+              "duration": 2919000000
             }
           },
           {
@@ -264,7 +185,7 @@
             "name": "Arrival 14 and departure day 22",
             "result": {
               "status": "passed",
-              "duration": 1729000000
+              "duration": 413000000
             }
           },
           {
@@ -274,7 +195,7 @@
             "name": "Number of guests and rooms 5 5 5",
             "result": {
               "status": "passed",
-              "duration": 11268000000
+              "duration": 4151000000
             }
           },
           {
@@ -284,7 +205,7 @@
             "name": "Click search button",
             "result": {
               "status": "passed",
-              "duration": 11011000000
+              "duration": 4449000000
             }
           },
           {
@@ -294,7 +215,7 @@
             "name": "I can see proper search results Karpacz",
             "result": {
               "status": "passed",
-              "duration": 209000000
+              "duration": 205000000
             }
           }
         ]
@@ -319,7 +240,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 18115000000
+              "duration": 2508000000
             }
           },
           {
@@ -329,7 +250,7 @@
             "name": "I provide destination Warsaw",
             "result": {
               "status": "passed",
-              "duration": 4616000000
+              "duration": 3171000000
             }
           },
           {
@@ -339,7 +260,7 @@
             "name": "Click search button",
             "result": {
               "status": "passed",
-              "duration": 9380000000
+              "duration": 3074000000
             }
           },
           {
@@ -349,7 +270,7 @@
             "name": "Click Show prices button",
             "result": {
               "status": "passed",
-              "duration": 2140000000
+              "duration": 335000000
             }
           },
           {
@@ -358,8 +279,8 @@
             "line": 35,
             "name": "Calendar is visible",
             "result": {
-              "status": "passed",
-              "duration": 121000000
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bui-calendar`, but never found it.\n    [2]</<@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:106:25\n    resolveAndRunStepDefinition@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12719:29\n    stepTest/<@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12040:35\n    getRet@https://www.booking.com/__cypress/runner/cypress_runner.js:156299:20\n    tryCatcher@https://www.booking.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://www.booking.com/__cypress/runner/cypress_runner.js:10296:29\n    thenFn@https://www.booking.com/__cypress/runner/cypress_runner.js:156317:60\n    then@https://www.booking.com/__cypress/runner/cypress_runner.js:156769:21\n    ../driver/src/cypress/cy.ts/addCommand/wrapByType/<@https://www.booking.com/__cypress/runner/cypress_runner.js:173267:19\n    ../driver/src/cypress/command_queue.ts/runCommand/<@https://www.booking.com/__cypress/runner/cypress_runner.js:172123:15\n    tryCatcher@https://www.booking.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.booking.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.booking.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@https://www.booking.com/__cypress/runner/cypress_runner.js:11051:10\n    _drainQueueStep@https://www.booking.com/__cypress/runner/cypress_runner.js:7733:12\n    _drainQueue@https://www.booking.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.booking.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://www.booking.com/__cypress/runner/cypress_runner.js:7608:14\n"
             }
           },
           {
@@ -368,8 +289,7 @@
             "line": 36,
             "name": "I stay in search page",
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           }
         ]
@@ -394,7 +314,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 19999000000
+              "duration": 3213000000
             }
           },
           {
@@ -404,7 +324,7 @@
             "name": "I provide destination Karpacz",
             "result": {
               "status": "passed",
-              "duration": 7273000000
+              "duration": 3459000000
             }
           },
           {
@@ -414,7 +334,7 @@
             "name": "Click search button",
             "result": {
               "status": "passed",
-              "duration": 7846000000
+              "duration": 3250000000
             }
           },
           {
@@ -424,7 +344,7 @@
             "name": "Click Show prices button",
             "result": {
               "status": "passed",
-              "duration": 3186000000
+              "duration": 451000000
             }
           },
           {
@@ -434,7 +354,7 @@
             "name": "Calendar is visible",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bui-calendar`, but never found it.\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:98:25)\n    at Context.resolveAndRunStepDefinition (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12701:29)\n    at Context.eval (https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12022:35)"
+              "error_message": "AssertionError: Timed out retrying after 15000ms: Expected to find element: `.bui-calendar`, but never found it.\n    [2]</<@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:106:25\n    resolveAndRunStepDefinition@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12719:29\n    stepTest/<@https://www.booking.com/__cypress/tests?p=cypress\\integration\\BDD\\booking.feature:12040:35\n    getRet@https://www.booking.com/__cypress/runner/cypress_runner.js:156299:20\n    tryCatcher@https://www.booking.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@https://www.booking.com/__cypress/runner/cypress_runner.js:10296:29\n    thenFn@https://www.booking.com/__cypress/runner/cypress_runner.js:156317:60\n    then@https://www.booking.com/__cypress/runner/cypress_runner.js:156769:21\n    ../driver/src/cypress/cy.ts/addCommand/wrapByType/<@https://www.booking.com/__cypress/runner/cypress_runner.js:173267:19\n    ../driver/src/cypress/command_queue.ts/runCommand/<@https://www.booking.com/__cypress/runner/cypress_runner.js:172123:15\n    tryCatcher@https://www.booking.com/__cypress/runner/cypress_runner.js:13022:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@https://www.booking.com/__cypress/runner/cypress_runner.js:10957:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@https://www.booking.com/__cypress/runner/cypress_runner.js:11014:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@https://www.booking.com/__cypress/runner/cypress_runner.js:11051:10\n    _drainQueueStep@https://www.booking.com/__cypress/runner/cypress_runner.js:7733:12\n    _drainQueue@https://www.booking.com/__cypress/runner/cypress_runner.js:7722:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@https://www.booking.com/__cypress/runner/cypress_runner.js:7738:16\n    ../../node_modules/bluebird/js/release/async.js/</Async/this.drainQueues@https://www.booking.com/__cypress/runner/cypress_runner.js:7608:14\n"
             }
           },
           {
@@ -468,7 +388,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 3668000000
+              "duration": 2137000000
             }
           },
           {
@@ -478,7 +398,7 @@
             "name": "I provide destination Warsaw",
             "result": {
               "status": "passed",
-              "duration": 6595000000
+              "duration": 3094000000
             }
           },
           {
@@ -488,7 +408,7 @@
             "name": "Click search button",
             "result": {
               "status": "passed",
-              "duration": 11112000000
+              "duration": 3588000000
             }
           },
           {
@@ -498,7 +418,7 @@
             "name": "I can see proper search results Warsaw",
             "result": {
               "status": "passed",
-              "duration": 171000000
+              "duration": 99000000
             }
           },
           {
@@ -508,7 +428,7 @@
             "name": "I can see Show prices button",
             "result": {
               "status": "passed",
-              "duration": 327000000
+              "duration": 126000000
             }
           }
         ]
@@ -533,7 +453,7 @@
             "name": "I open booking.com Page",
             "result": {
               "status": "passed",
-              "duration": 3717000000
+              "duration": 2682000000
             }
           },
           {
@@ -543,7 +463,7 @@
             "name": "I provide destination Karpacz",
             "result": {
               "status": "passed",
-              "duration": 4171000000
+              "duration": 3769000000
             }
           },
           {
@@ -553,7 +473,7 @@
             "name": "Click search button",
             "result": {
               "status": "passed",
-              "duration": 8306000000
+              "duration": 3345000000
             }
           },
           {
@@ -563,7 +483,7 @@
             "name": "I can see proper search results Karpacz",
             "result": {
               "status": "passed",
-              "duration": 333000000
+              "duration": 94000000
             }
           },
           {
@@ -573,7 +493,7 @@
             "name": "I can see Show prices button",
             "result": {
               "status": "passed",
-              "duration": 457000000
+              "duration": 141000000
             }
           }
         ]
