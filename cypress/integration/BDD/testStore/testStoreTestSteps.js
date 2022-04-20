@@ -1,5 +1,6 @@
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import HomePage_PO from '../../../support/pageObjects/testStore/HomePage_PO'
+import Plp_PO from '../../../support/pageObjects/testStore/Plp_PO'
 import RegistrationPage_PO from '../../../support/pageObjects/testStore/RegistrationPage_PO'
 import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
 /// <reference types="Cypress" />
@@ -44,4 +45,12 @@ And('I can log out from account', function () {
 })
 Then('I can see error message: {string}', function (errorMessage) {
     RegistrationPage_PO.invalidUserErrorMessageCheck(errorMessage)
+})
+When('I search for {word}', function (product) {
+    HomePage_PO.searchForProduct(product)
+})
+Then('I can see PLP with results', function () {
+    Plp_PO.products().should("be.visible").and('have.length.above', 1)
+    Plp_PO.searchCriteriaTextField().should("be.visible")
+    Plp_PO.productsCheck()
 })

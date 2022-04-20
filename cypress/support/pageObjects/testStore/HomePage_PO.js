@@ -1,22 +1,25 @@
 class HomePage_PO {
     static visitHomePage() {
-         cy.visit("https://automationteststore.com/")
-         cy.get(".logo").should("be.visible")
-         cy.url().should('eq', 'https://automationteststore.com/')
+        cy.visit("https://automationteststore.com/")
+        cy.get(".logo").should("be.visible")
+        cy.url().should('eq', 'https://automationteststore.com/')
     }
     static loginOrRegisterButton() {
         return cy.get(".navbar").contains("Login or register")
     }
-    static homeButton(){
+    static homeButton() {
         return cy.get(".logo")
     }
-    static currencyMenu(){
+    static currencyMenu() {
         return cy.get(".block_6 > .nav > .dropdown > .dropdown-toggle")
     }
-    static searchField(){
+    static searchField() {
         return cy.get("#filter_keyword")
     }
-    static homePageElementsCheck(){
+    static searchButton() {
+        return cy.get(".button-in-search")
+    }
+    static homePageElementsCheck() {
         this.homeButton().should("be.visible")
         this.currencyMenu().should("be.visible")
         this.searchField().should("be.visible")
@@ -28,5 +31,12 @@ class HomePage_PO {
             cy.get("#loginFrm_password").type(row.password)
         })
         cy.get(".btn").contains("Login").click()
+    }
+    static searchForProduct(product) {
+        this.searchField().type(product)
+        this.searchButton().click()
+    }
+    static products() {
+        return cy.get(".thumbnails > div")
     }
 } export default HomePage_PO
