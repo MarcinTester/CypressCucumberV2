@@ -13,49 +13,10 @@
     "uri": "testStore.feature",
     "elements": [
       {
-        "id": "automationteststore-testing;open-home-page",
+        "id": "automationteststore-testing;",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Open Home Page",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          },
-          {
-            "name": "@smoke",
-            "line": 3
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 630000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 6,
-            "name": "I land on home page",
-            "result": {
-              "status": "passed",
-              "duration": 5000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore-testing;login-into-account",
-        "keyword": "Scenario",
-        "line": 8,
-        "name": "Login into account",
+        "line": 35,
+        "name": "",
         "tags": [
           {
             "name": "@regression",
@@ -67,175 +28,76 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 9,
+            "line": 30,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 439000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "userLogin",
-                      "password"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "test129129129",
-                      "test1"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 10,
-            "name": "I sign up with user",
-            "result": {
-              "status": "passed",
-              "duration": 1937000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 13,
-            "name": "I'm logged into account",
-            "result": {
-              "status": "passed",
-              "duration": 138000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "I can log out from account",
-            "result": {
-              "status": "passed",
-              "duration": 701000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore-testing;login-into-account-with-invalid-user",
-        "keyword": "Scenario",
-        "line": 16,
-        "name": "Login into account with invalid user",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 600000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "userLogin",
-                      "password"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "invalidUser",
-                      "test1"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I sign up with user",
-            "result": {
-              "status": "passed",
-              "duration": 1576000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "I can see error message: \"Error: Incorrect login or password provided\"",
-            "result": {
-              "status": "passed",
-              "duration": 44000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore-testing;register-new-user",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Register new user",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 24,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 607000000
+              "duration": 627000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 25,
-            "name": "I register new account",
+            "line": 31,
+            "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 4970000000
+              "duration": 820000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 26,
-            "name": "New account is created",
+            "line": 32,
+            "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 18000000
+              "duration": 579000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore-testing;",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 476000000
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 27,
-            "name": "I am logged into new account",
+            "keyword": "When ",
+            "line": 31,
+            "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 357000000
+              "duration": 602000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I can see PLP with results",
+            "result": {
+              "status": "passed",
+              "duration": 151000000
             }
           }
         ]
