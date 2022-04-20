@@ -1,6 +1,5 @@
 @regression
 Feature: booking testing
-    @smoke
     Scenario: Open Home Page
         Given I open booking.com Page
         Then I land on home page
