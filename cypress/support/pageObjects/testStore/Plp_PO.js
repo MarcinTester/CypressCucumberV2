@@ -4,11 +4,9 @@ class Plp_PO {
     }
     static productsCheck() {
         this.products().should("be.visible").and('have.length.above', 1)
+        this.productPrices().first().should('include.text', "$")
         this.productPrices().each((element, index, $list) => {
-            cy.log(index)
-            const text = cy.get('select[name="age"]').eq(index).text()
-            cy.log(text)
-
+            cy.wrap(element).should("contain.text", "$") 
         })
     }
     static searchCriteriaTextField() {
