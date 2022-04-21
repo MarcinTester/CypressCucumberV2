@@ -112,7 +112,7 @@ class HomePage_PO {
             })
         })
     }
-    selectAge(Age){
+    selectAge(Age) {
         cy.get('span[class="bui-stepper__display"]').eq(1).then((element) => {
             const numberOfChildren = element.text()
             times(numberOfChildren, (index) => {
@@ -129,5 +129,4 @@ class HomePage_PO {
             })
         })
     }
-
 } export default HomePage_PO

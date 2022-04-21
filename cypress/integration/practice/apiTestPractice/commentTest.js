@@ -21,21 +21,21 @@ describe('comment Test', () => {
             method: "GET",
             url: "http://localhost:3000/comments",
             headers: {
-             accept: "application/json"
+                accept: "application/json"
             }
         }).then(response => {
             let body = JSON.parse(JSON.stringify(response.body))
-            body.forEach(function(item) {
+            body.forEach(function (item) {
                 comments.push(item["body"])
                 expect(response.status).to.eql(200)
             })
         }).then(() => {
-            var lastestComment = comments[comments.length -1]
+            var lastestComment = comments[comments.length - 1]
             cy.log(lastestComment)
             expect(lastestComment).to.eq(randomBody)
         })
     })
-     it('delete Test Example', () => {
+    it('delete Test Example', () => {
         cy.request({
             method: "DELETE",
             url: "http://localhost:3000/comments/" + comments.length

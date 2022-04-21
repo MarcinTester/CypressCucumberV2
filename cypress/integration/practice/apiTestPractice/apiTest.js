@@ -7,7 +7,6 @@ describe('apiTest', function () {
         result = cy.request("https://jsonplaceholder.typicode.com/posts");
         result.its("status").should("equal", 200)
     })
-
     it('apiTest Validate example', () => {
         cy.request({
             method: "GET",
@@ -15,8 +14,6 @@ describe('apiTest', function () {
             headers: {
                 accept: "application/json"
             }
-
-            
         }).then(response => {
             let body = JSON.parse(JSON.stringify(response.body))
             cy.log(body)

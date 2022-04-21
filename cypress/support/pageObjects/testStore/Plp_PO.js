@@ -6,7 +6,7 @@ class Plp_PO {
         this.products().should("be.visible").and('have.length.above', 1)
         this.productPrices().first().should('include.text', "$")
         this.productPrices().each((element, index, $list) => {
-            cy.wrap(element).should("contain.text", "$") 
+            cy.wrap(element).should("contain.text", "$")
         })
     }
     static searchCriteriaTextField() {

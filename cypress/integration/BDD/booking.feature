@@ -13,7 +13,7 @@ Feature: booking testing
         And Click Continue with email
         Then I can see error message "Make sure the email address you entered is correct."
         And I'm still on Register page
-@inProgress
+    @inProgress
     Scenario Outline: Full search test
         Given I open booking.com Page
         When I provide destination <destination>

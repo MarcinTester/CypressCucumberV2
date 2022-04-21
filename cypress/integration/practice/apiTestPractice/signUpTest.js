@@ -29,7 +29,7 @@ describe('sign up test', () => {
         })
     })
     it("Login and Mock Tags Test", () => {
-        cy.intercept("GET", "**/tags", {fixture: "popularTags.json"})
+        cy.intercept("GET", "**/tags", { fixture: "popularTags.json" })
         cy.visit("http://localhost:4200/")
         cy.get(".nav").contains("Sign in").click()
         cy.get('[placeholder="Email"]').type(email)
@@ -40,7 +40,7 @@ describe('sign up test', () => {
         cy.get(".tag-list").should("contain", "JS").and("contain", "Cypress")
     })
     it("Mock Data Test", () => {
-        cy.intercept("GET", "**/api/articles*", {fixture: "mockData.json"}).as("articles")
+        cy.intercept("GET", "**/api/articles*", { fixture: "mockData.json" }).as("articles")
         cy.visit("http://localhost:4200/")
         cy.get(".nav").contains("Sign in").click()
         cy.get('[placeholder="Email"]').type(email)
@@ -49,6 +49,6 @@ describe('sign up test', () => {
         cy.get(':nth-child(4) > .nav-link').contains(username)
         cy.wait("@articles")
         cy.get(".feed-toggle > .nav > :nth-child(2) > .nav-link").click()
-    
+
     })
 })

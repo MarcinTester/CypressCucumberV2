@@ -21,16 +21,16 @@ describe('PostTest', () => {
             method: "GET",
             url: "http://localhost:3000/posts",
             headers: {
-             accept: "application/json"
+                accept: "application/json"
             }
         }).then(response => {
             let body = JSON.parse(JSON.stringify(response.body))
-            body.forEach(function(item) {
+            body.forEach(function (item) {
                 titleOfPosts.push(item["title"])
                 expect(response.status).to.eql(200)
             })
-        }).then(()=>{
-            var lastestPost = titleOfPosts[titleOfPosts.length -1]
+        }).then(() => {
+            var lastestPost = titleOfPosts[titleOfPosts.length - 1]
             cy.log(lastestPost)
             expect(lastestPost).to.eq(randomTitle)
         })

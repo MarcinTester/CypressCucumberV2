@@ -87,13 +87,6 @@ And('I\'m still on Register page', function () {
   registerPage.continueWithEmailButton().should('be.visible')
   registerPage.incorrectEmailErrorMessage().should('be.visible')
 })
-
-
-
-
-
-
-
 Then('I can see all important page elements', function () {
   //to do: add POs
   const homePage = new HomePage_PO()
