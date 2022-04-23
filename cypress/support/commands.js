@@ -1,3 +1,5 @@
+//to be deleted soon
+
 import { times } from 'lodash'
 
 Cypress.Commands.add('testCommand', (text) => {
@@ -40,7 +42,7 @@ Cypress.Commands.add('selectDestination', (destination, fullDestination) => {
       console.log($e1.text())
       if($e1.text().includes(fullDestination))
       {
-          $e1.click()
+          cy.wrap($e1).click()
       }
     })
 })
@@ -53,7 +55,7 @@ Cypress.Commands.add('selectArrivalDay', (arrivalDay) => {
     
           if($e1.text().includes(arrivalDay))
           {
-              $e1.click()
+              cy.wrap($e1).click()
               return false
           }
   })
@@ -65,7 +67,7 @@ Cypress.Commands.add('selectArrivalDay', (arrivalDay) => {
         console.log($e1.text())
         if($e1.text().includes(departureDay))
         {
-            $e1.click()
+            cy.wrap($e1).click()
             return false
         }
     })
