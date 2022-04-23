@@ -1,3 +1,4 @@
+#obsolete
 @regression
 Feature: booking testing
     Scenario: Open Home Page

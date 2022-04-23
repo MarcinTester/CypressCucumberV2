@@ -1,3 +1,4 @@
+//obsolete
 class SearchPage_PO {
     acceptButton() {
         return cy.get("button[id='onetrust-accept-btn-handler']")

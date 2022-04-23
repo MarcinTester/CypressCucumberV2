@@ -1,3 +1,4 @@
+//obsolete
 beforeEach(() => {
     cy.fixture('examples').then(function (data) {
         this.data = data

@@ -1,3 +1,4 @@
+//obsolete
 import { times } from 'lodash'
 class HomePage_PO {
     visitHomePage() {
@@ -29,12 +30,12 @@ class HomePage_PO {
             console.log(index)
             cy.log($e1.text())
             if ($e1.text().includes(destination)) {
-                $e1.click()
+                cy.wrap($e1).click()
+                return false
             }
         })
     }
     selectArrivalDay(arrivalDay) {
-        console.log(cy.get('.bui-calendar').not(':visible'))
         cy.get('.bui-calendar').then(element => {
             if (element.not(':visible')) {
                 cy.get("div[class='xp__dates xp__group']").click()
@@ -45,7 +46,7 @@ class HomePage_PO {
             console.log($e1.text())
 
             if ($e1.text().includes(arrivalDay)) {
-                $e1.click()
+                cy.wrap($e1).click({ force: true })
                 return false
             }
         })
@@ -56,7 +57,7 @@ class HomePage_PO {
             console.log(index)
             console.log($e1.text())
             if ($e1.text().includes(departureDay)) {
-                $e1.click()
+                cy.wrap($e1).click({ force: true })
                 return false
             }
         })

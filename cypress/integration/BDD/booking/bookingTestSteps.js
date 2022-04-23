@@ -1,3 +1,4 @@
+//obsolete
 import HomePage_PO from '../../../support/pageObjects/booking/HomePage_PO'
 import SearchPage_PO from '../../../support/pageObjects/booking/SearchPage_PO'
 import RegisterPage_PO from '../../../support/pageObjects/booking/RegisterPage_PO'
