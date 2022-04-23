@@ -25,7 +25,7 @@ Feature: automationteststore testing
         When I register new account
         Then New account is created
         And I am logged into new account
-
+    @smoke
     Scenario Outline:
         Given I open automationteststore.com Page
         When I search for <product>
