@@ -36,7 +36,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1682000000
+              "duration": 1705000000
             }
           },
           {
@@ -91,7 +91,62 @@
             "name": "Footer contains all expected option",
             "result": {
               "status": "passed",
-              "duration": 706000000
+              "duration": 324000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "headers"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Privacy Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Return Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Shipping"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Contact Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Site Map"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Footer options lead to proper content",
+            "result": {
+              "status": "passed",
+              "duration": 15105000000
             }
           }
         ]
