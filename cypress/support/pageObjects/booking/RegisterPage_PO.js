@@ -1,4 +1,4 @@
-
+//obsolete
 class RegisterPage_PO {
     emailTextBox() {
         return cy.get("input[type='email']")
