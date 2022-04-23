@@ -54,3 +54,9 @@ Then('I can see PLP with results', function () {
     Plp_PO.searchCriteriaTextField().should("be.visible")
     Plp_PO.productsCheck()
 })
+Then('Footer contains all expected option', function (table) {
+        table.hashes().forEach(row => {
+            cy.log("row: " + row.headers)
+            cy.get(".info_links_footer > li").contains(row.headers).should("be.visible")
+    })
+})

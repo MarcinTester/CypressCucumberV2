@@ -13,14 +13,18 @@
     "uri": "testStore.feature",
     "elements": [
       {
-        "id": "automationteststore-testing;",
+        "id": "automationteststore-testing;footer-test",
         "keyword": "Scenario",
-        "line": 35,
-        "name": "",
+        "line": 4,
+        "name": "Footer Test",
         "tags": [
           {
             "name": "@regression",
             "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 3
           }
         ],
         "type": "scenario",
@@ -28,76 +32,66 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 30,
+            "line": 5,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 627000000
+              "duration": 1682000000
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 31,
-            "name": "I search for Men",
-            "result": {
-              "status": "passed",
-              "duration": 820000000
-            }
-          },
-          {
-            "arguments": [],
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "headers"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Privacy Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Return Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Shipping"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Contact Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Site Map"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login"
+                    ]
+                  }
+                ]
+              }
+            ],
             "keyword": "Then ",
-            "line": 32,
-            "name": "I can see PLP with results",
+            "line": 6,
+            "name": "Footer contains all expected option",
             "result": {
               "status": "passed",
-              "duration": 579000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore-testing;",
-        "keyword": "Scenario",
-        "line": 36,
-        "name": "",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 30,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 476000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 31,
-            "name": "I search for Skin",
-            "result": {
-              "status": "passed",
-              "duration": 602000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "I can see PLP with results",
-            "result": {
-              "status": "passed",
-              "duration": 151000000
+              "duration": 706000000
             }
           }
         ]
