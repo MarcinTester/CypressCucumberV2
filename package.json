@@ -16,7 +16,8 @@
     "Regression-Firefox-Dashboard": "npm run Regression-Dashboard -- --browser firefox --headed",
     "Regression-Electron-Dashboard": "npm run Regression-Dashboard -- --browser electron --headed",
     "Regression-Edge-Dashboard": "npm run Regression-Dashboard -- --browser edge --headed",
-    "Regression-Chrome/Firefox-Dashboard": "npm run Regression-Chrome-Dashboard & npm run Regression-Firefox-Dashboard"
+    "Regression-Chrome/Firefox-Dashboard": "npm run Regression-Chrome-Dashboard & npm run Regression-Firefox-Dashboard",
+    "Regression-Electron/Edge-Dashboard": "npm run Regression-Electron-Dashboard & npm run Regression-Edge-Dashboard"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
