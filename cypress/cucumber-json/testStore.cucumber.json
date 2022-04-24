@@ -32,7 +32,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1402000000
+              "duration": 618000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 4000000
             }
           }
         ]
@@ -71,7 +71,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 483000000
+              "duration": 424000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 699000000
+              "duration": 644000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 537000000
+              "duration": 489000000
             }
           }
         ]
@@ -120,7 +120,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 426000000
+              "duration": 417000000
             }
           },
           {
@@ -130,7 +130,7 @@
             "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 780000000
+              "duration": 592000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 224000000
+              "duration": 159000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 422000000
+              "duration": 384000000
             }
           },
           {
@@ -196,7 +196,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1370000000
+              "duration": 3285000000
             }
           },
           {
@@ -206,7 +206,7 @@
             "name": "I'm logged into account",
             "result": {
               "status": "passed",
-              "duration": 96000000
+              "duration": 102000000
             }
           },
           {
@@ -216,7 +216,7 @@
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 453000000
+              "duration": 623000000
             }
           }
         ]
@@ -241,7 +241,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 802000000
+              "duration": 513000000
             }
           },
           {
@@ -296,7 +296,7 @@
             "name": "Footer contains all expected option",
             "result": {
               "status": "passed",
-              "duration": 193000000
+              "duration": 217000000
             }
           },
           {
@@ -351,7 +351,7 @@
             "name": "Footer options leads to proper content",
             "result": {
               "status": "passed",
-              "duration": 6500000000
+              "duration": 10426000000
             }
           }
         ]
@@ -376,7 +376,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1064000000
+              "duration": 501000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1331000000
+              "duration": 1464000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 35000000
             }
           }
         ]
@@ -438,7 +438,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 451000000
+              "duration": 558000000
             }
           },
           {
@@ -448,7 +448,7 @@
             "name": "I register new account",
             "result": {
               "status": "passed",
-              "duration": 5368000000
+              "duration": 7702000000
             }
           },
           {
@@ -458,7 +458,7 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 258000000
             }
           },
           {
@@ -468,7 +468,7 @@
             "name": "I am logged into new account",
             "result": {
               "status": "passed",
-              "duration": 437000000
+              "duration": 3537000000
             }
           }
         ]
@@ -476,7 +476,7 @@
       {
         "id": "automationteststore.com-testing;random-fail-test",
         "keyword": "Scenario",
-        "line": 63,
+        "line": 64,
         "name": "Random fail test",
         "tags": [
           {
@@ -493,21 +493,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 64,
+            "line": 65,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 473000000
+              "duration": 2619000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 65,
+            "line": 66,
             "name": "Test Should randomly fail",
             "result": {
-              "status": "passed",
-              "duration": 7000000
+              "status": "failed",
+              "error_message": "Error: test fails here\n    [3]</<@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:154:11\n    resolveAndRunStepDefinition@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12754:29\n    stepTest/<@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12075:35\n    getRet@https://automationteststore.com/__cypress/runner/cypress_runner.js:156299:20\nFrom previous event:\n    thenFn@https://automationteststore.com/__cypress/runner/cypress_runner.js:156317:60\n    then@https://automationteststore.com/__cypress/runner/cypress_runner.js:156769:21\n    ../driver/src/cypress/cy.ts/addCommand/wrapByType/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:173267:19\n    ../driver/src/cypress/command_queue.ts/runCommand/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:172123:15\nFrom previous event:\n    runCommand@https://automationteststore.com/__cypress/runner/cypress_runner.js:172102:8\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:172245:19\n    ../driver/src/cypress/command_queue.ts/run/next/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:172274:16\nFrom previous event:\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:172245:39\nFrom previous event:\n    ../driver/src/util/queue.ts/run/promise<@https://automationteststore.com/__cypress/runner/cypress_runner.js:186675:77\nFrom previous event:\n    run@https://automationteststore.com/__cypress/runner/cypress_runner.js:186670:21\n    run@https://automationteststore.com/__cypress/runner/cypress_runner.js:172308:15\n    ../driver/src/cypress/cy.ts/addCommand/cy[name]@https://automationteststore.com/__cypress/runner/cypress_runner.js:173306:18\n    runTest/<@https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12096:10\n    ../driver/src/cypress/cy.ts/setRunnable/runnable.fn@https://automationteststore.com/__cypress/runner/cypress_runner.js:173524:43\n    callFn@https://automationteststore.com/__cypress/runner/cypress_runner.js:125614:21\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:125601:13\n    ../driver/src/cypress/runner.ts/create/onRunnableRun/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:180445:30\nFrom previous event:\n    onRunnableRun@https://automationteststore.com/__cypress/runner/cypress_runner.js:180430:12\n    action@https://automationteststore.com/__cypress/runner/cypress_runner.js:169793:28\n    ../driver/src/cypress/mocha.ts/patchRunnableRun/Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:178107:13\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.runTest@https://automationteststore.com/__cypress/runner/cypress_runner.js:126273:10\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.runTests/next/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:126399:12\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:126182:14\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hooks/next/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:126192:11\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:126094:14\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook/next/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:126155:11\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:180343:24\n    ../driver/src/cypress/runner.ts/create/onRunnableRun/onNext/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:180372:17\nFrom previous event:\n    onNext@https://automationteststore.com/__cypress/runner/cypress_runner.js:180369:59\n    done@https://automationteststore.com/__cypress/runner/cypress_runner.js:125554:7\n    callFn@https://automationteststore.com/__cypress/runner/cypress_runner.js:125637:7\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:125601:13\n    ../driver/src/cypress/runner.ts/create/onRunnableRun/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:180445:30\nFrom previous event:\n    onRunnableRun@https://automationteststore.com/__cypress/runner/cypress_runner.js:180430:12\n    action@https://automationteststore.com/__cypress/runner/cypress_runner.js:169793:28\n    ../driver/src/cypress/mocha.ts/patchRunnableRun/Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:178107:13\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:126116:10\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook/next/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:126155:11\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:180343:24\n    ../driver/src/cypress/runner.ts/create/onRunnableRun/onNext/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:180372:17\nFrom previous event:\n    onNext@https://automationteststore.com/__cypress/runner/cypress_runner.js:180369:59\n    done@https://automationteststore.com/__cypress/runner/cypress_runner.js:125554:7\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run/callFn/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:125619:11\nFrom previous event:\n    callFn@https://automationteststore.com/__cypress/runner/cypress_runner.js:125617:14\n    ../driver/node_modules/mocha/lib/runnable.js/</Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:125601:13\n    ../driver/src/cypress/runner.ts/create/onRunnableRun/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:180445:30\nFrom previous event:\n    onRunnableRun@https://automationteststore.com/__cypress/runner/cypress_runner.js:180430:12\n    action@https://automationteststore.com/__cypress/runner/cypress_runner.js:169793:28\n    ../driver/src/cypress/mocha.ts/patchRunnableRun/Runnable.prototype.run@https://automationteststore.com/__cypress/runner/cypress_runner.js:178107:13\n    next@https://automationteststore.com/__cypress/runner/cypress_runner.js:126116:10\n    ../driver/node_modules/mocha/lib/runner.js/</Runner.prototype.hook/<@https://automationteststore.com/__cypress/runner/cypress_runner.js:126160:9\n    timeslice@https://automationteststore.com/__cypress/runner/cypress_runner.js:120086:27"
             }
           }
         ]

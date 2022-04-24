@@ -11,7 +11,7 @@
     "Smoke-Chrome-Dashboard": "npx cypress-tags run -e TAGS=\"@smoke\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome",
     "Smoke-Dashboard": "npx cypress-tags run -e TAGS=\"@smoke\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome",
     "Smoke-allBrowsers-Dashboard": "npm run Smoke-Dashboard -- --browser electron --headed & npm run Smoke-Dashboard -- --browser chrome --headed & npm run Smoke-Dashboard -- --browser firefox --headed & npm run Smoke-Dashboard -- --browser edge --headed",
-    "Regression-Chrome-Dashboard": "npx cypress-tags run -e TAGS=\"@regression\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome --browser chrome"
+    "Regression-Chrome-Dashboard": "npx cypress-tags run -e TAGS=\"@regression\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome --browser firefox"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
