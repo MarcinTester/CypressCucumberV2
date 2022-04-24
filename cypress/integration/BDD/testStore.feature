@@ -21,7 +21,7 @@ Feature: automationteststore.com testing
             | test129129129 | test1    |
         Then I'm logged into account
         And I can log out from account
-    @focus
+
     Scenario: Footer Test
         Given I open automationteststore.com Page
         Then Footer contains all expected option
@@ -59,3 +59,8 @@ Feature: automationteststore.com testing
         When I register new account
         Then New account is created
         And I am logged into new account
+    @randomFail
+    #test to create failed tests statistics
+    Scenario: Random fail test
+        Given I open automationteststore.com Page
+        Then Test Should randomly fail

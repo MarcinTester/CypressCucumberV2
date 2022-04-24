@@ -67,3 +67,11 @@ And('Footer options leads to proper content', function (table) {
         cy.go("back")
     })
 })
+Then('Test Should randomly fail', function (table) {
+    const n = () => Cypress._.random(0, 1)
+    const x = n()
+    cy.log(x)
+    if (x != 1) {
+        throw new Error("test fails here")
+    }
+})
