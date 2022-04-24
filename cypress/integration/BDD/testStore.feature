@@ -4,7 +4,12 @@ Feature: automationteststore.com testing
     Scenario: Open Home Page
         Given I open automationteststore.com Page
         Then I land on home page
-    @smoke
+   @smoke
+    #test to create failed tests statistics
+    Scenario: Random fail test
+        Given I open automationteststore.com Page
+        Then Test Should randomly fail
+
     Scenario Outline:
         Given I open automationteststore.com Page
         When I search for <product>
@@ -13,7 +18,7 @@ Feature: automationteststore.com testing
             | product |
             | Men     |
             | Skin    |
-    @smoke
+ 
     Scenario: Login into account
         Given I open automationteststore.com Page
         When I sign up with user
@@ -59,8 +64,3 @@ Feature: automationteststore.com testing
         When I register new account
         Then New account is created
         And I am logged into new account
-    @randomFail
-    #test to create failed tests statistics
-    Scenario: Random fail test
-        Given I open automationteststore.com Page
-        Then Test Should randomly fail
