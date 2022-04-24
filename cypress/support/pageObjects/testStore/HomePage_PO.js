@@ -39,4 +39,7 @@ class HomePage_PO {
     static products() {
         return cy.get(".thumbnails > div")
     }
+    static footer() {
+        return cy.get(".info_links_footer > li")
+    }
 } export default HomePage_PO

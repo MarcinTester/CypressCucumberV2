@@ -22,6 +22,10 @@ describe('Coommandspractice', function () {
       }
     })
   })
+  it('My FirstTest case', function () {
+    cy.visit("https://automationteststore.com/")
+    cy.get(".nav-pills > li").contains("Makeup").click()
+})
 })
 
 
