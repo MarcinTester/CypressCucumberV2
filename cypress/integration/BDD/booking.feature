@@ -1,5 +1,5 @@
-#obsolete
-@regression
+#to be deleted
+@obsolete
 Feature: booking testing
     Scenario: Open Home Page
         Given I open booking.com Page

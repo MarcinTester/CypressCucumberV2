@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 describe('Coommandspractice', function () {
-  it('My FirstTest case', function () {
+  it('contain case', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".prdocutname").contains("Skinsheen Bronzer Stick").click().then(function (itemHeader) {
       console.log("selected item: " + itemHeader.text())
@@ -12,7 +12,7 @@ describe('Coommandspractice', function () {
     })
     console.log("test")
   })
-  it.only('My FirstTest case', function () {
+  it('My FirstTest case', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".dropdown").each((element, index, $list) => {
       cy.log(element.text())
@@ -25,9 +25,14 @@ describe('Coommandspractice', function () {
   it('My FirstTest case', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".nav-pills > li").contains("Makeup").click()
+  })
+  it.only('Random fail test', function () {
+    cy.visit("https://automationteststore.com/")
+    const n = () => Cypress._.random(0, 1)
+    const x = n()
+    cy.log(x)
+    if (x != 1) {
+      throw new Error("test fails here")
+    }
+  })
 })
-})
-
-
-
-
