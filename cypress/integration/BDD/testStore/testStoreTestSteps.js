@@ -3,6 +3,7 @@ import HomePage_PO from '../../../support/pageObjects/testStore/HomePage_PO'
 import Plp_PO from '../../../support/pageObjects/testStore/Plp_PO'
 import RegistrationPage_PO from '../../../support/pageObjects/testStore/RegistrationPage_PO'
 import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
+import ContentPage_PO from '../../../support/pageObjects/testStore/ContentPage_PO'
 /// <reference types="Cypress" />
 
 Given('I open automationteststore.com Page', function () {
@@ -56,13 +57,13 @@ Then('I can see PLP with results', function () {
 })
 Then('Footer contains all expected option', function (table) {
     table.hashes().forEach(row => {
-        cy.get(".info_links_footer > li").contains(row.headers).should("be.visible")
+        HomePage_PO.footer().contains(row.headers).should("be.visible")
     })
 })
 And('Footer options leads to proper content', function (table) {
     table.hashes().forEach(row => {
-        cy.get(".info_links_footer > li").contains(row.headers).should("be.visible").click()
-        cy.get(".maintext").should("contain.text", row.headers).and("be.visible")
+        HomePage_PO.footer().contains(row.headers).should("be.visible").click()
+        ContentPage_PO.mainText().should("contain.text", row.headers).and("be.visible")
         cy.go("back")
     })
 })

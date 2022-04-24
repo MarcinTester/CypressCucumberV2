@@ -21,7 +21,7 @@ Feature: automationteststore.com testing
             | test129129129 | test1    |
         Then I'm logged into account
         And I can log out from account
-
+    @focus
     Scenario: Footer Test
         Given I open automationteststore.com Page
         Then Footer contains all expected option
