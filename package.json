@@ -12,11 +12,11 @@
     "Smoke-Dashboard": "npx cypress-tags run -e TAGS=\"@smoke\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome",
     "Smoke-allBrowsers-Dashboard": "npm run Smoke-Dashboard -- --browser electron --headed & npm run Smoke-Dashboard -- --browser chrome --headed & npm run Smoke-Dashboard -- --browser firefox --headed & npm run Smoke-Dashboard -- --browser edge --headed",
     "Regression-Dashboard": "npx cypress-tags run -e TAGS=\"@regression\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92",
-    "Regression-Chrome-Dashboard": "npm run Regression-Dashboard -- --browser chrome",
-    "Regression-Firefox-Dashboard": "npm run Regression-Dashboard -- --browser firefox",
-    "Regression-Electron-Dashboard": "npm run Regression-Dashboard -- --browser electron",
-    "Regression-Edge-Dashboard": "npm run Regression-Dashboard -- --browser edge",
-    "Regression-Chrome/Firefox-Dashboard": "npm run Regression-Dashboard -- --browser chrome --headed & npm run Regression-Dashboard -- --browser firefox --headed"
+    "Regression-Chrome-Dashboard": "npm run Regression-Dashboard -- --browser chrome --headed",
+    "Regression-Firefox-Dashboard": "npm run Regression-Dashboard -- --browser firefox --headed",
+    "Regression-Electron-Dashboard": "npm run Regression-Dashboard -- --browser electron --headed",
+    "Regression-Edge-Dashboard": "npm run Regression-Dashboard -- --browser edge --headed",
+    "Regression-Chrome/Firefox-Dashboard": "npm run Regression-Dashboard -- --browser chrome & npm run Regression-Dashboard -- --browser firefox"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,

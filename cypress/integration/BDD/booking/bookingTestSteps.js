@@ -3,7 +3,6 @@ import HomePage_PO from '../../../support/pageObjects/booking/HomePage_PO'
 import SearchPage_PO from '../../../support/pageObjects/booking/SearchPage_PO'
 import RegisterPage_PO from '../../../support/pageObjects/booking/RegisterPage_PO'
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
-import { times } from 'lodash'
 /// <reference types="Cypress" />
 
 Given('I open booking.com Page', function () {
