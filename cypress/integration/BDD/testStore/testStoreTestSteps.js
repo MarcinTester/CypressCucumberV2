@@ -59,10 +59,10 @@ Then('Footer contains all expected option', function (table) {
         cy.get(".info_links_footer > li").contains(row.headers).should("be.visible")
     })
 })
-And('Footer options lead to proper content', function (table) {
+And('Footer options leads to proper content', function (table) {
     table.hashes().forEach(row => {
         cy.get(".info_links_footer > li").contains(row.headers).should("be.visible").click()
-        cy.get(".maintext").should("contain.text", row.headers)
+        cy.get(".maintext").should("contain.text", row.headers).and("be.visible")
         cy.go("back")
     })
 })
