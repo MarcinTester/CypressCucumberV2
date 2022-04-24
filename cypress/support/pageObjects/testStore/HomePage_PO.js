@@ -19,10 +19,11 @@ class HomePage_PO {
     static searchButton() {
         return cy.get(".button-in-search")
     }
-    static homePageElementsCheck() {
-        this.homeButton().should("be.visible")
-        this.currencyMenu().should("be.visible")
-        this.searchField().should("be.visible")
+    static products() {
+        return cy.get(".thumbnails > div")
+    }
+    static footer() {
+        return cy.get(".info_links_footer > li")
     }
     static signIn(table) {
         cy.get(".navbar").contains("Login or register").click()
@@ -32,14 +33,13 @@ class HomePage_PO {
         })
         cy.get(".btn").contains("Login").click()
     }
+    static homePageElementsCheck() {
+        this.homeButton().should("be.visible")
+        this.currencyMenu().should("be.visible")
+        this.searchField().should("be.visible")
+    }
     static searchForProduct(product) {
         this.searchField().type(product)
         this.searchButton().click()
-    }
-    static products() {
-        return cy.get(".thumbnails > div")
-    }
-    static footer() {
-        return cy.get(".info_links_footer > li")
     }
 } export default HomePage_PO

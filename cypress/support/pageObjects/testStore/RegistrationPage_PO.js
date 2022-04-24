@@ -1,21 +1,4 @@
 class RegistrationPage_PO {
-    static registerRandomUserAccount() {
-        let FirstName = "test_" + Math.random().toString(30).substring(2)
-        let LastName = "test_" + Math.random().toString(30).substring(2)
-        let Email = FirstName + "@gmail.com"
-        this.firstNameTextField().type(FirstName)
-        this.lastNameTextField().type(LastName)
-        this.emailTextField().type(Email)
-        this.addressTextField().type("Address")
-        this.cityTextField().type("City")
-        this.regionTextField().select("Durham")
-        this.postalCodeTextField().type("123")
-        this.loginNameTextField().type(FirstName)
-        this.passwordTextField().type("test1")
-        this.confirmPasswordTextField().type("test1")
-        this.privacyPolicyCheck().check()
-        cy.get('.btn').contains("Continue").click()
-    }
     static firstNameTextField() {
         return cy.get('#AccountFrm_firstname')
     }
@@ -60,5 +43,22 @@ class RegistrationPage_PO {
     }
     static invalidUserErrorMessageCheck(errorMessage) {
         cy.get(".alert").should("be.visible").and("contain", errorMessage)
+    }
+    static registerRandomUserAccount() {
+        let FirstName = "test_" + Math.random().toString(30).substring(2)
+        let LastName = "test_" + Math.random().toString(30).substring(2)
+        let Email = FirstName + "@gmail.com"
+        this.firstNameTextField().type(FirstName)
+        this.lastNameTextField().type(LastName)
+        this.emailTextField().type(Email)
+        this.addressTextField().type("Address")
+        this.cityTextField().type("City")
+        this.regionTextField().select("Durham")
+        this.postalCodeTextField().type("123")
+        this.loginNameTextField().type(FirstName)
+        this.passwordTextField().type("test1")
+        this.confirmPasswordTextField().type("test1")
+        this.privacyPolicyCheck().check()
+        cy.get('.btn').contains("Continue").click()
     }
 } export default RegistrationPage_PO
