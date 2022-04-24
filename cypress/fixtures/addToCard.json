@@ -1,0 +1,30 @@
+{
+    "totals":[
+       {
+          "id":"subtotal",
+          "title":"Sub-Total:",
+          "text":"$250.00",
+          "converted":250,
+          "value":250,
+          "sort_order":"1",
+          "total_type":"subtotal"
+       },
+       {
+          "id":"shipping",
+          "title":"Flat Shipping Rate:",
+          "text":"$2.00",
+          "value":"2",
+          "sort_order":"3",
+          "total_type":"shipping"
+       },
+       {
+          "id":"total",
+          "title":"Total:",
+          "text":"$252.00",
+          "converted":252,
+          "value":252,
+          "sort_order":1000,
+          "total_type":"total"
+       }
+    ]
+ }

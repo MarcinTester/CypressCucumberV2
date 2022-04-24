@@ -15,7 +15,7 @@ describe('PUT Test', () => {
             expect(response.status).to.eql(200)
         })
     })
-    it('PUT Test Example2', () => {
+    it('GET Test Example', () => {
         cy.request({
             method: "GET",
             url: "http://localhost:3000/posts/4",

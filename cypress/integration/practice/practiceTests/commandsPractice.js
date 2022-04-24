@@ -35,13 +35,4 @@ describe('Coommandspractice', function () {
       throw new Error("test fails here")
     }
   })
-  it.only('Bag test', function () {
-    cy.visit("https://automationteststore.com/")
-    const n = () => Cypress._.random(0, 1)
-    const x = n()
-    cy.log(x)
-    if (x != 1) {
-      throw new Error("test fails here")
-    }
-  })
 })
