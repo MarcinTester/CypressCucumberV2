@@ -26,7 +26,16 @@ describe('Coommandspractice', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".nav-pills > li").contains("Makeup").click()
   })
-  it.only('Random fail test', function () {
+  it('Random fail test', function () {
+    cy.visit("https://automationteststore.com/")
+    const n = () => Cypress._.random(0, 1)
+    const x = n()
+    cy.log(x)
+    if (x != 1) {
+      throw new Error("test fails here")
+    }
+  })
+  it.only('Bag test', function () {
     cy.visit("https://automationteststore.com/")
     const n = () => Cypress._.random(0, 1)
     const x = n()
