@@ -32,7 +32,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 968000000
+              "duration": 1623000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 5000000
             }
           }
         ]
@@ -71,7 +71,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 446000000
+              "duration": 1615000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 707000000
+              "duration": 1725000000
             }
           },
           {
@@ -91,7 +91,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 789000000
+              "duration": 1040000000
             }
           }
         ]
@@ -120,7 +120,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1320000000
+              "duration": 2789000000
             }
           },
           {
@@ -130,7 +130,7 @@
             "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 1203000000
+              "duration": 900000000
             }
           },
           {
@@ -140,7 +140,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 207000000
+              "duration": 253000000
             }
           }
         ]
@@ -169,7 +169,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 466000000
+              "duration": 856000000
             }
           },
           {
@@ -196,7 +196,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1542000000
+              "duration": 1917000000
             }
           },
           {
@@ -206,7 +206,7 @@
             "name": "I'm logged into account",
             "result": {
               "status": "passed",
-              "duration": 154000000
+              "duration": 152000000
             }
           },
           {
@@ -216,7 +216,7 @@
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 567000000
+              "duration": 922000000
             }
           }
         ]
@@ -241,7 +241,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 658000000
+              "duration": 634000000
             }
           },
           {
@@ -296,7 +296,7 @@
             "name": "Footer contains all expected option",
             "result": {
               "status": "passed",
-              "duration": 301000000
+              "duration": 260000000
             }
           },
           {
@@ -351,7 +351,7 @@
             "name": "Footer options leads to proper content",
             "result": {
               "status": "passed",
-              "duration": 9226000000
+              "duration": 20003000000
             }
           }
         ]
@@ -376,7 +376,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 985000000
+              "duration": 953000000
             }
           },
           {
@@ -403,7 +403,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1845000000
+              "duration": 2229000000
             }
           },
           {
@@ -413,7 +413,7 @@
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
               "status": "passed",
-              "duration": 54000000
+              "duration": 33000000
             }
           }
         ]
@@ -438,7 +438,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 648000000
+              "duration": 762000000
             }
           },
           {
@@ -448,7 +448,7 @@
             "name": "I register new account",
             "result": {
               "status": "passed",
-              "duration": 12946000000
+              "duration": 7380000000
             }
           },
           {
@@ -458,7 +458,7 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 127000000
+              "duration": 49000000
             }
           },
           {
@@ -468,7 +468,7 @@
             "name": "I am logged into new account",
             "result": {
               "status": "passed",
-              "duration": 2170000000
+              "duration": 638000000
             }
           }
         ]
@@ -497,7 +497,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1778000000
+              "duration": 910000000
             }
           },
           {
@@ -507,7 +507,7 @@
             "name": "Test Should randomly fail",
             "result": {
               "status": "passed",
-              "duration": 32000000
+              "duration": 12000000
             }
           }
         ]
