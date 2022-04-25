@@ -4,6 +4,7 @@
   "pageLoadTimeout": 15000,
   "reporter": "mochawesome",
   "env": {
+    "key": "https://automationteststore.com/",
     "testFiles": [
       "**/*.{feature,BDD}"
     ]

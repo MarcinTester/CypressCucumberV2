@@ -1,6 +1,6 @@
 class HomePage_PO {
     static visitHomePage() {
-        cy.visit("https://automationteststore.com/")
+        cy.visit(Cypress.env('key'));
         cy.get(".logo").should("be.visible")
         cy.url().should('eq', 'https://automationteststore.com/')
     }
