@@ -4,9 +4,10 @@ import SearchPage_PO from '../../../support/pageObjects/booking/SearchPage_PO'
 import RegisterPage_PO from '../../../support/pageObjects/booking/RegisterPage_PO'
 import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 /// <reference types="Cypress" />
-
+const homePage = new HomePage_PO()
+const searchPage = new SearchPage_PO()
+const registerPage = new RegisterPage_PO()
 Given('I open booking.com Page', function () {
-  const homePage = new HomePage_PO()
   homePage.visitHomePage()
 })
 Then('I land on home page', function () {
@@ -18,78 +19,61 @@ Then('I land on home page', function () {
   homePage.datePicker().should('be.visible')
 })
 When('I provide destination {word}', function (destination) {
-  const homePage = new HomePage_PO()
   homePage.selectDestination(destination)
 })
 And('Arrival {word} and departure day {word}', function (arrivalDay, departureDay) {
-  const homePage = new HomePage_PO()
   homePage.selectArrivalDay(arrivalDay)
   homePage.selectDepartureDay(departureDay)
 })
 And('Number of guests and rooms {word} {word} {word}', function (numberOfAdults, numberOfChildren, numberOfRooms) {
-  const homePage = new HomePage_PO()
   homePage.selectNumberOfAdults(numberOfAdults)
   homePage.selectNumberOfChildren(numberOfChildren)
   homePage.selectAgeOfChildren(this.data.ageOfChildren)
   homePage.selectNumberOfRooms(numberOfRooms)
 })
 And('Click search button', function () {
-  const homePage = new HomePage_PO()
   homePage.searchButton().click()
 })
 Then('I can see proper search results {word}', function (destination) {
-  const searchPage = new SearchPage_PO()
-
   searchPage.searchResultHeader().should('be.visible').and('include.text', destination)
   console.log("arrivalDay")
 })
 Then('See availability buttons', function () {
-  const searchPage = new SearchPage_PO()
   searchPage.seeAvailabilitybuttons().should('be.visible').and('include.text', 'See availability').should('have.length.above', 20)
 })
 And('I can see Show prices button', function () {
-  const searchPage = new SearchPage_PO()
   searchPage.showPriceButton().should('be.visible').and('include.text', 'Show prices')
 })
 And('Click Show prices button', function () {
-  const searchPage = new SearchPage_PO()
   searchPage.showPriceButton().click()
 })
 And('I stay in search page', function () {
-  const searchPage = new SearchPage_PO()
   searchPage.getUrl().should('include', 'searchresults')
 })
 Then('Calendar is visible', function () {
-  const searchPage = new SearchPage_PO()
   searchPage.calendar().should('be.visible')
 })
 And('I click Register button', function () {
-  const homePage = new HomePage_PO()
   homePage.registerButton().click()
 })
 And('Provide invalid email', function (table) {
-  const registerPage = new RegisterPage_PO()
   table.hashes().forEach(row => {
     registerPage.emailTextBox().type(row.email)
   })
 })
 And('Click Continue with email', function () {
-  const registerPage = new RegisterPage_PO()
   registerPage.continueWithEmailButton().click()
 })
 Then('I can see error message {string}', function (errorMessage) {
-  const registerPage = new RegisterPage_PO()
   registerPage.incorrectEmailErrorMessage().should('be.visible').and('include.text', errorMessage)
 })
 And('I\'m still on Register page', function () {
-  const registerPage = new RegisterPage_PO()
   registerPage.emailTextBox().should('be.visible')
   registerPage.continueWithEmailButton().should('be.visible')
   registerPage.incorrectEmailErrorMessage().should('be.visible')
 })
 Then('I can see all important page elements', function () {
   //to do: add POs
-  const homePage = new HomePage_PO()
   homePage.homeButton().should('be.visible')
   homePage.currencyButton().should('be.visible')
   cy.get('svg[class="bk-icon -streamline-question_mark_circle"]').should('be.visible')
