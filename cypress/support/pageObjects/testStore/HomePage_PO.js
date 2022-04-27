@@ -39,7 +39,7 @@ class HomePage_PO {
         this.searchField().should("be.visible")
     }
     static searchForProduct(product) {
-        this.searchField().type(product)
-        this.searchButton().click()
+        this.searchField().type(product + "{enter}")
+       // this.searchButton().click()
     }
 } export default HomePage_PO

@@ -32,7 +32,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 495000000
+              "duration": 8004000000
             }
           },
           {
@@ -71,7 +71,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 487000000
+              "duration": 465000000
             }
           },
           {
@@ -81,7 +81,7 @@
             "name": "Test Should randomly fail",
             "result": {
               "status": "passed",
-              "duration": 8000000
+              "duration": 9000000
             }
           }
         ]
@@ -106,7 +106,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 466000000
+              "duration": 710000000
             }
           },
           {
@@ -116,7 +116,7 @@
             "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 752000000
+              "duration": 553000000
             }
           },
           {
@@ -126,7 +126,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 483000000
+              "duration": 511000000
             }
           }
         ]
@@ -151,7 +151,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 649000000
+              "duration": 713000000
             }
           },
           {
@@ -161,7 +161,7 @@
             "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 466000000
             }
           },
           {
@@ -171,7 +171,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 145000000
+              "duration": 136000000
             }
           }
         ]
@@ -196,7 +196,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 420000000
+              "duration": 383000000
             }
           },
           {
@@ -223,7 +223,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1581000000
+              "duration": 1383000000
             }
           },
           {
@@ -233,7 +233,7 @@
             "name": "I'm logged into account",
             "result": {
               "status": "passed",
-              "duration": 101000000
+              "duration": 93000000
             }
           },
           {
@@ -243,142 +243,7 @@
             "name": "I can log out from account",
             "result": {
               "status": "passed",
-              "duration": 575000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore.com-testing;footer-test",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Footer Test",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 31,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 502000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "headers"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "About Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Privacy Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Return Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Shipping"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Contact Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Site Map"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Login"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "Footer contains all expected option",
-            "result": {
-              "status": "passed",
-              "duration": 239000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "headers"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "About Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Privacy Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Return Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Shipping"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Contact Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Site Map"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Login"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Footer options leads to proper content",
-            "result": {
-              "status": "passed",
-              "duration": 8159000000
+              "duration": 426000000
             }
           }
         ]
@@ -403,7 +268,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 406000000
+              "duration": 412000000
             }
           },
           {
@@ -430,7 +295,7 @@
             "name": "I sign up with user",
             "result": {
               "status": "passed",
-              "duration": 1344000000
+              "duration": 1293000000
             }
           },
           {
@@ -440,7 +305,7 @@
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
               "status": "passed",
-              "duration": 29000000
+              "duration": 32000000
             }
           }
         ]
@@ -465,7 +330,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 447000000
+              "duration": 436000000
             }
           },
           {
@@ -475,7 +340,7 @@
             "name": "I register new account",
             "result": {
               "status": "passed",
-              "duration": 5651000000
+              "duration": 5386000000
             }
           },
           {
@@ -485,7 +350,7 @@
             "name": "New account is created",
             "result": {
               "status": "passed",
-              "duration": 36000000
+              "duration": 23000000
             }
           },
           {
@@ -495,7 +360,7 @@
             "name": "I am logged into new account",
             "result": {
               "status": "passed",
-              "duration": 588000000
+              "duration": 462000000
             }
           }
         ]
