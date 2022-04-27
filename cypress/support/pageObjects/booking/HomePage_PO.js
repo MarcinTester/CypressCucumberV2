@@ -53,7 +53,7 @@ class HomePage_PO {
     }
     selectDepartureDay(departureDay) {
         console.log(departureDay)
-        cy.get('td[class="bui-calendar__date"]').each(($e1, test, $list) => {
+        cy.get('td[class="bui-calendar__date"]').each(($e1, index, $list3) => {
             console.log(index)
             console.log($e1.text())
             if ($e1.text().includes(departureDay)) {
