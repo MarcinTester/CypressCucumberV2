@@ -11,7 +11,6 @@ Given('I open booking.com Page', function () {
   homePage.visitHomePage()
 })
 Then('I land on home page', function () {
-  const homePage = new HomePage_PO()
   homePage.homeButton().should('be.visible')
   homePage.currencyButton().should('be.visible')
   homePage.searchButton().should('be.visible')
