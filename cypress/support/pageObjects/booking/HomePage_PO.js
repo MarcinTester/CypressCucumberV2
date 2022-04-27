@@ -45,8 +45,9 @@ class HomePage_PO {
             console.log(index)
             console.log($e1.text())
 
+
             if ($e1.text().includes(arrivalDay)) {
-                 cy.wrap($e1).click({ force: true })
+            cy.wrap($e1).click({ force: true })
                 return false
             }
         })
