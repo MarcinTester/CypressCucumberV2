@@ -82,9 +82,10 @@ Then('I can see all important page elements', function () {
     expect(text).to.includes('List your property')
   })
   cy.get("a[class='bui-button bui-button--secondary js-header-login-link']").eq(0).should('be.visible').then(($e1) => {
-    expect($e1.text()).to.includes('Register')
-    console.log($e1.text())
-    console.log(expect($e1.text()).to.includes('Register'))
+    const text = $e1.text()
+    console.log(text)
+    expect(text).to.includes('Register')
+    console.log(expect(text).to.includes('Register'))
   })
   cy.get("a[class='bui-button bui-button--secondary js-header-login-link']").eq(1).should('be.visible').then(($e1) => {
     const signInText = $e1.text()
@@ -106,5 +107,6 @@ Then('I can see all important page elements', function () {
     expect($e1.eq(2).text()).to.includes('Car rental')
     expect($e1.eq(3).text()).to.includes('Attractions')
     expect($e1.eq(4).text()).to.includes('Airport taxis')
+    
   })
 })

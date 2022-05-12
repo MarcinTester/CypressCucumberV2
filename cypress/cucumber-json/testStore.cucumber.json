@@ -15,7 +15,7 @@
       {
         "id": "automationteststore.com-testing;open-home-page",
         "keyword": "Scenario",
-        "line": 51,
+        "line": 60,
         "name": "Open Home Page",
         "tags": [
           {
@@ -28,21 +28,19 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 52,
+            "line": 61,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 731000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 53,
+            "line": 62,
             "name": "I land on home page",
             "result": {
-              "status": "passed",
-              "duration": 6000000
+              "status": "skipped"
             }
           }
         ]
@@ -50,7 +48,7 @@
       {
         "id": "automationteststore.com-testing;random-fail-test",
         "keyword": "Scenario",
-        "line": 9,
+        "line": 10,
         "name": "Random fail test",
         "tags": [
           {
@@ -60,6 +58,10 @@
           {
             "name": "@smoke",
             "line": 7
+          },
+          {
+            "name": "@focus",
+            "line": 8
           }
         ],
         "type": "scenario",
@@ -67,66 +69,21 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 10,
+            "line": 11,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 648000000
+              "duration": 2243000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 12,
             "name": "Test Should randomly fail",
             "result": {
               "status": "passed",
-              "duration": 10000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore.com-testing;",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 14,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 517000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "I search for Men",
-            "result": {
-              "status": "passed",
-              "duration": 504000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 16,
-            "name": "I can see PLP with results",
-            "result": {
-              "status": "passed",
-              "duration": 565000000
+              "duration": 16000000
             }
           }
         ]
@@ -147,31 +104,76 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
+            "line": 15,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 645000000
+              "duration": 1049000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 15,
-            "name": "I search for Skin",
+            "line": 16,
+            "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 748000000
+              "duration": 1126000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 16,
+            "line": 17,
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 423000000
+              "duration": 1779000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1359000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I search for Skin",
+            "result": {
+              "status": "passed",
+              "duration": 1177000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I can see PLP with results",
+            "result": {
+              "status": "passed",
+              "duration": 447000000
             }
           }
         ]
@@ -179,7 +181,7 @@
       {
         "id": "automationteststore.com-testing;login-into-account",
         "keyword": "Scenario",
-        "line": 22,
+        "line": 23,
         "name": "Login into account",
         "tags": [
           {
@@ -192,11 +194,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 23,
+            "line": 24,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 575000000
+              "status": "skipped"
             }
           },
           {
@@ -219,166 +220,28 @@
               }
             ],
             "keyword": "When ",
-            "line": 24,
+            "line": 25,
             "name": "I sign up with user",
             "result": {
-              "status": "passed",
-              "duration": 1658000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 27,
+            "line": 28,
             "name": "I'm logged into account",
             "result": {
-              "status": "passed",
-              "duration": 111000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 28,
+            "line": 29,
             "name": "I can log out from account",
             "result": {
-              "status": "passed",
-              "duration": 514000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore.com-testing;footer-test",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Footer Test",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 31,
-            "name": "I open automationteststore.com Page",
-            "result": {
-              "status": "passed",
-              "duration": 524000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "headers"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "About Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Privacy Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Return Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Shipping"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Contact Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Site Map"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Login"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "Then ",
-            "line": 32,
-            "name": "Footer contains all expected option",
-            "result": {
-              "status": "passed",
-              "duration": 213000000
-            }
-          },
-          {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "headers"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "About Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Privacy Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Return Policy"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Shipping"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Contact Us"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Site Map"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Login"
-                    ]
-                  }
-                ]
-              }
-            ],
-            "keyword": "And ",
-            "line": 41,
-            "name": "Footer options leads to proper content",
-            "result": {
-              "status": "passed",
-              "duration": 7270000000
+              "status": "skipped"
             }
           }
         ]
@@ -386,7 +249,7 @@
       {
         "id": "automationteststore.com-testing;login-into-account-with-invalid-user",
         "keyword": "Scenario",
-        "line": 55,
+        "line": 32,
         "name": "Login into account with invalid user",
         "tags": [
           {
@@ -399,11 +262,10 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 56,
+            "line": 33,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 547000000
+              "status": "skipped"
             }
           },
           {
@@ -426,21 +288,151 @@
               }
             ],
             "keyword": "When ",
-            "line": 57,
+            "line": 34,
             "name": "I sign up with user",
             "result": {
-              "status": "passed",
-              "duration": 1580000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 60,
+            "line": 37,
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
-              "status": "passed",
-              "duration": 85000000
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;footer-test",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Footer Test",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "headers"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Privacy Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Return Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Shipping"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Contact Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Site Map"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Footer contains all expected option",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "headers"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "About Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Privacy Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Return Policy"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Shipping"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Contact Us"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Site Map"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Login"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 50,
+            "name": "Footer options leads to proper content",
+            "result": {
+              "status": "skipped"
             }
           }
         ]
@@ -448,7 +440,7 @@
       {
         "id": "automationteststore.com-testing;register-new-user",
         "keyword": "Scenario",
-        "line": 62,
+        "line": 64,
         "name": "Register new user",
         "tags": [
           {
@@ -461,41 +453,37 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 63,
+            "line": 65,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 626000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 64,
+            "line": 66,
             "name": "I register new account",
             "result": {
-              "status": "passed",
-              "duration": 5586000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 65,
+            "line": 67,
             "name": "New account is created",
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 66,
+            "line": 68,
             "name": "I am logged into new account",
             "result": {
-              "status": "passed",
-              "duration": 477000000
+              "status": "skipped"
             }
           }
         ]

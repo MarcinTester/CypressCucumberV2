@@ -8,7 +8,7 @@ Cypress.Commands.add('testCommand', (text) => {
     console.log(text)
     console.log(text)
 })
-Cypress.Commands.add("acceptCookies", (productName) => {
+Cypress.Commands.add("acceptCookies", () => {
     cy.get("button[id='onetrust-accept-btn-handler']").then(element => {
         if (element.not(':visible')) {
             cy.get("button[id='onetrust-accept-btn-handler']").click()
@@ -125,4 +125,12 @@ Cypress.Commands.add('selectNumberOfRooms', (numberOfRooms) => {
             cy.get('.sb-group__field-rooms > .bui-stepper > .bui-stepper__wrapper > .bui-stepper__add-button').click()
         })
     })
+})
+Cypress.Commands.add('randomTestFail', () => {
+    const n = () => Cypress._.random(0, 1)
+    const x = n()
+    cy.log(x)
+    if (x != 1) {
+        throw new Error("test fails here")
+    }
 })
