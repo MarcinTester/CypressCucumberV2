@@ -35,4 +35,14 @@ describe('Coommandspractice', function () {
       throw new Error("test fails here")
     }
   })
+  it.only('Locators', function () {
+    cy.visit("https://automationteststore.com/")
+   cy.get("ul[class='dropdown-menu currency']").invoke('show')
+   cy.get("ul[class='dropdown-menu currency'] > li").contains('€ Euro').click()
+   cy.get("ul[class='dropdown-menu currency']").invoke('show')
+   cy.get("ul[class='dropdown-menu currency'] > li").contains('£ Pound Sterling').click()
+   cy.get("ul[class='dropdown-menu currency']").invoke('show')
+   cy.get("ul[class='dropdown-menu currency'] > li").contains('$ US Dollar').click()
+   cy.wait(3000)
+  })
 })
