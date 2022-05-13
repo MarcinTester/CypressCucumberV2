@@ -5,7 +5,6 @@ Feature: automationteststore.com testing
         Given I open automationteststore.com Page
         Then I land on home page
     @smoke
-    @focus
     #test to create failed tests statistics
     Scenario: Random fail test
         Given I open automationteststore.com Page
