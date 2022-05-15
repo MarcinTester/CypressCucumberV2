@@ -48,7 +48,7 @@
       {
         "id": "automationteststore.com-testing;random-fail-test",
         "keyword": "Scenario",
-        "line": 10,
+        "line": 9,
         "name": "Random fail test",
         "tags": [
           {
@@ -58,10 +58,43 @@
           {
             "name": "@smoke",
             "line": 7
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Test Should randomly fail",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;phone-categories-dropdown",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Phone categories dropdown",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
           },
           {
             "name": "@focus",
-            "line": 8
+            "line": 12
           }
         ],
         "type": "scenario",
@@ -69,79 +102,58 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
-            "name": "I open automationteststore.com Page",
+            "line": 14,
+            "name": "I am using samsung-s10",
             "result": {
               "status": "passed",
-              "duration": 2243000000
+              "duration": 262000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "Test Should randomly fail",
-            "result": {
-              "status": "passed",
-              "duration": 16000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "automationteststore.com-testing;",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
+            "keyword": "And ",
             "line": 15,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1049000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I search for Men",
-            "result": {
-              "status": "passed",
-              "duration": 1126000000
+              "duration": 1216000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "I can see PLP with results",
+            "line": 16,
+            "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 1779000000
+              "duration": 5000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I can use dropdown menu to select categories",
+            "result": {
+              "status": "passed",
+              "duration": 1009000000
             }
           }
         ]
       },
       {
-        "id": "automationteststore.com-testing;",
+        "id": "automationteststore.com-testing;phone-categories-dropdown",
         "keyword": "Scenario",
         "line": 21,
-        "name": "",
+        "name": "Phone categories dropdown",
         "tags": [
           {
             "name": "@regression",
             "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 12
           }
         ],
         "type": "scenario",
@@ -149,31 +161,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 15,
-            "name": "I open automationteststore.com Page",
+            "line": 14,
+            "name": "I am using iphone-x",
             "result": {
               "status": "passed",
-              "duration": 1359000000
+              "duration": 358000000
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "I search for Skin",
+            "keyword": "And ",
+            "line": 15,
+            "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1177000000
+              "duration": 1523000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 17,
-            "name": "I can see PLP with results",
+            "line": 16,
+            "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 447000000
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I can use dropdown menu to select categories",
+            "result": {
+              "status": "passed",
+              "duration": 1213000000
             }
           }
         ]
@@ -484,6 +506,96 @@
             "name": "I am logged into new account",
             "result": {
               "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;search-for-product",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "Search for product",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1074000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "I search for Men",
+            "result": {
+              "status": "passed",
+              "duration": 927000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "I can see PLP with results",
+            "result": {
+              "status": "passed",
+              "duration": 528000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;search-for-product",
+        "keyword": "Scenario",
+        "line": 77,
+        "name": "Search for product",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 71,
+            "name": "I open automationteststore.com Page",
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 72,
+            "name": "I search for Skin",
+            "result": {
+              "status": "passed",
+              "duration": 1012000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "I can see PLP with results",
+            "result": {
+              "status": "passed",
+              "duration": 254000000
             }
           }
         ]

@@ -7,6 +7,7 @@ import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 const homePage = new HomePage_PO()
 const searchPage = new SearchPage_PO()
 const registerPage = new RegisterPage_PO()
+
 Given('I open booking.com Page', function () {
   homePage.visitHomePage()
 })
@@ -107,6 +108,5 @@ Then('I can see all important page elements', function () {
     expect($e1.eq(2).text()).to.includes('Car rental')
     expect($e1.eq(3).text()).to.includes('Attractions')
     expect($e1.eq(4).text()).to.includes('Airport taxis')
-    
   })
 })

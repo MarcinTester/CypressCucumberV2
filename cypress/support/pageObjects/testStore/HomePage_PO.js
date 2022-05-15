@@ -25,6 +25,16 @@ class HomePage_PO {
     static footer() {
         return cy.get(".info_links_footer > li")
     }
+    static categoriesDropDown() {
+        return cy.get(".subnav > .form-control")
+    }
+    static categoriesDropDown() {
+        return cy.get(".subnav > .form-control")
+    }
+    static SelectCategoryDropDown(category) {
+        this.categoriesDropDown().select(category)
+    }
+
     static signIn(table) {
         cy.get(".navbar").contains("Login or register").click()
         table.hashes().forEach(row => {

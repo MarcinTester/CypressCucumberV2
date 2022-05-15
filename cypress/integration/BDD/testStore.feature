@@ -9,15 +9,16 @@ Feature: automationteststore.com testing
     Scenario: Random fail test
         Given I open automationteststore.com Page
         Then Test Should randomly fail
-
-    Scenario Outline:
-        Given I open automationteststore.com Page
-        When I search for <product>
-        Then I can see PLP with results
+    @focus
+    Scenario Outline: Phone categories dropdown
+        Given I am using <preset> 
+        And I open automationteststore.com Page
+        Then I land on home page
+        And I can use dropdown menu to select categories
         Examples:
-            | product |
-            | Men     |
-            | Skin    |
+            | preset      |
+            | samsung-s10 |
+            | iphone-x    |
 
     Scenario: Login into account
         Given I open automationteststore.com Page
@@ -65,3 +66,12 @@ Feature: automationteststore.com testing
         When I register new account
         Then New account is created
         And I am logged into new account
+
+    Scenario Outline: Search for product
+        Given I open automationteststore.com Page
+        When I search for <product>
+        Then I can see PLP with results
+        Examples:
+            | product |
+            | Men     |
+            | Skin    |

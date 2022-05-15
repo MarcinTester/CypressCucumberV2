@@ -26,16 +26,16 @@ describe('Coommandspractice', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".nav-pills > li").contains("Makeup").click()
   })
-  it('Random fail test', function () {
+  it.only('Random fail test', function () {
     cy.visit("https://automationteststore.com/")
-    const n = () => Cypress._.random(0, 1)
+    const n = () => Cypress._.random(0, 1 )
     const x = n()
     cy.log(x)
     if (x != 1) {
       throw new Error("test fails here")
     }
   })
-  it.only('Locators', function () {
+  it('Locators', function () {
     cy.visit("https://automationteststore.com/")
    cy.get("ul[class='dropdown-menu currency']").invoke('show')
    cy.get("ul[class='dropdown-menu currency'] > li").contains('€ Euro').click()

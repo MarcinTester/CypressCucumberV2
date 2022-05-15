@@ -4,11 +4,15 @@ import Plp_PO from '../../../support/pageObjects/testStore/Plp_PO'
 import RegistrationPage_PO from '../../../support/pageObjects/testStore/RegistrationPage_PO'
 import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
 import ContentPage_PO from '../../../support/pageObjects/testStore/ContentPage_PO'
+import ShoppingCart_PO from '../../../support/pageObjects/testStore/ShoppingCart_PO'
 /// <reference types="Cypress" />
 
 Given('I open automationteststore.com Page', function () {
     HomePage_PO.visitHomePage()
 })
+Given('I am using {word}', function (preset) {
+    cy.viewport(preset)
+  })
 Then('I land on home page', function () {
     HomePage_PO.homePageElementsCheck
 })
@@ -31,6 +35,10 @@ And('I am logged into new account', function () {
     AccountPage_PO.continueButton().click()
     AccountPage_PO.myAccountHeader().should("be.visible").and("contain", "My Account")
     AccountPage_PO.accountOptions().its('length').should('eq', 9)
+})
+And('I can use dropdown menu to select categories', function () {
+    HomePage_PO.SelectCategoryDropDown("Cart")
+    ShoppingCart_PO.mainText().should("be.visible").and("contain", "Shopping Cart")
 })
 And('I sign up with user', function (table) {
     HomePage_PO.signIn(table)
