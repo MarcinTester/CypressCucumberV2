@@ -1,13 +1,16 @@
 @regression
 Feature: automationteststore.com testing
-
+    @focus
     Scenario: Add product to cart
         Given I open automationteststore.com Page
         And Search for "shoes"
+        And Choose product "black" colour
+        And Choose quantity: "4"
         When I click add to cart button
         Then "Womens high heel point toe stiletto sandals ankle strap court shoes" is visible in cart
+        And Colour "black" is selected
+        And Quantity "4" is selected
 
-    @focus
     Scenario: Confirm order
         Given I open automationteststore.com Page
         And I sign up with user

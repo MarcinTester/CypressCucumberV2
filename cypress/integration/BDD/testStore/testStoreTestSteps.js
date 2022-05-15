@@ -101,3 +101,15 @@ And('I can go back to home page', function () {
     CheckoutPage_PO.clickContinueButton()
     HomePage_PO.homePageElementsCheck()
 })
+And('Choose product {string} colour', function (colour) {
+    Ppd_PO.chooseColourRadioButtons(colour)
+})
+And('Colour {string} is selected', function (colour) {
+    ShoppingCart_PO.checkProductColour(colour)
+})
+And('Choose quantity: {string}', function (quantity) {
+    Ppd_PO.chooseQuantity(quantity)
+})
+And('Quantity {string} is selected', function (quantity) {
+    ShoppingCart_PO.CheckQuantityOfProduct(quantity)
+})
