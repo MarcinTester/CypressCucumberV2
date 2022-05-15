@@ -5,6 +5,7 @@ import RegistrationPage_PO from '../../../support/pageObjects/testStore/Registra
 import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
 import ContentPage_PO from '../../../support/pageObjects/testStore/ContentPage_PO'
 import ShoppingCart_PO from '../../../support/pageObjects/testStore/ShoppingCart_PO'
+import Ppd_PO from '../../../support/pageObjects/testStore/Ppd_PO'
 /// <reference types="Cypress" />
 
 Given('I open automationteststore.com Page', function () {
@@ -12,7 +13,7 @@ Given('I open automationteststore.com Page', function () {
 })
 Given('I am using {word}', function (preset) {
     cy.viewport(preset)
-  })
+})
 Then('I land on home page', function () {
     HomePage_PO.homePageElementsCheck
 })
@@ -38,7 +39,7 @@ And('I am logged into new account', function () {
 })
 And('I can use dropdown menu to select categories', function () {
     HomePage_PO.SelectCategoryDropDown("Cart")
-    ShoppingCart_PO.mainText().should("be.visible").and("contain", "Shopping Cart")
+    ShoppingCart_PO.mainTextIsVisible()
 })
 And('I sign up with user', function (table) {
     HomePage_PO.signIn(table)
@@ -77,4 +78,14 @@ And('Footer options leads to proper content', function (table) {
 })
 Then('Test Should randomly fail', function () {
     cy.randomTestFail()
+})
+And('Search for {string}', function (product) {
+    HomePage_PO.searchForProduct(product)
+})
+When('I click add to cart button', function () {
+    Ppd_PO.clickAddToCart()
+    ShoppingCart_PO.mainTextIsVisible()
+})
+Then('{string} is visible in cart', function (product) {
+   ShoppingCart_PO.productIsVisibleInCart(product)
 })

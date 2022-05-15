@@ -1,5 +1,12 @@
 @regression
 Feature: automationteststore.com testing
+    @focus
+    Scenario: Add product to cart
+        Given I open automationteststore.com Page
+        And Search for "shoes"
+        When I click add to cart button
+        Then "Womens high heel point toe stiletto sandals ankle strap court shoes" is visible in cart
+         
     @smoke
     Scenario: Open Home Page
         Given I open automationteststore.com Page
@@ -9,9 +16,9 @@ Feature: automationteststore.com testing
     Scenario: Random fail test
         Given I open automationteststore.com Page
         Then Test Should randomly fail
-    @focus
+
     Scenario Outline: Phone categories dropdown
-        Given I am using <preset> 
+        Given I am using <preset>
         And I open automationteststore.com Page
         Then I land on home page
         And I can use dropdown menu to select categories
@@ -27,7 +34,6 @@ Feature: automationteststore.com testing
             | test129129129 | test1    |
         Then I'm logged into account
         And I can log out from account
-
 
     Scenario: Login into account with invalid user
         Given I open automationteststore.com Page
