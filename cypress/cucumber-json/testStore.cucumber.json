@@ -21,10 +21,6 @@
           {
             "name": "@regression",
             "line": 1
-          },
-          {
-            "name": "@focus",
-            "line": 3
           }
         ],
         "type": "scenario",
@@ -35,8 +31,7 @@
             "line": 5,
             "name": "I open automationteststore.com Page",
             "result": {
-              "status": "passed",
-              "duration": 844000000
+              "status": "skipped"
             }
           },
           {
@@ -45,8 +40,7 @@
             "line": 6,
             "name": "Search for \"shoes\"",
             "result": {
-              "status": "passed",
-              "duration": 1209000000
+              "status": "skipped"
             }
           },
           {
@@ -55,8 +49,7 @@
             "line": 7,
             "name": "I click add to cart button",
             "result": {
-              "status": "passed",
-              "duration": 606000000
+              "status": "skipped"
             }
           },
           {
@@ -65,8 +58,113 @@
             "line": 8,
             "name": "\"Womens high heel point toe stiletto sandals ankle strap court shoes\" is visible in cart",
             "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "automationteststore.com-testing;confirm-order",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Confirm order",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@focus",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I open automationteststore.com Page",
+            "result": {
               "status": "passed",
-              "duration": 38000000
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "userLogin",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "test129129129",
+                      "test1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I sign up with user",
+            "result": {
+              "status": "passed",
+              "duration": 2041000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Search for \"shoes\"",
+            "result": {
+              "status": "passed",
+              "duration": 744000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click add to cart button",
+            "result": {
+              "status": "passed",
+              "duration": 1120000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I go to checkout and confrim order",
+            "result": {
+              "status": "passed",
+              "duration": 1986000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "My order is processed",
+            "result": {
+              "status": "passed",
+              "duration": 786000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I can go back to home page",
+            "result": {
+              "status": "passed",
+              "duration": 978000000
             }
           }
         ]
@@ -74,7 +172,7 @@
       {
         "id": "automationteststore.com-testing;open-home-page",
         "keyword": "Scenario",
-        "line": 66,
+        "line": 78,
         "name": "Open Home Page",
         "tags": [
           {
@@ -87,7 +185,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 67,
+            "line": 79,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -96,7 +194,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 68,
+            "line": 80,
             "name": "I land on home page",
             "result": {
               "status": "skipped"
@@ -107,7 +205,7 @@
       {
         "id": "automationteststore.com-testing;random-fail-test",
         "keyword": "Scenario",
-        "line": 16,
+        "line": 28,
         "name": "Random fail test",
         "tags": [
           {
@@ -116,7 +214,7 @@
           },
           {
             "name": "@smoke",
-            "line": 14
+            "line": 26
           }
         ],
         "type": "scenario",
@@ -124,7 +222,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
+            "line": 29,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -133,7 +231,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 30,
             "name": "Test Should randomly fail",
             "result": {
               "status": "skipped"
@@ -144,7 +242,7 @@
       {
         "id": "automationteststore.com-testing;phone-categories-dropdown",
         "keyword": "Scenario",
-        "line": 27,
+        "line": 39,
         "name": "Phone categories dropdown",
         "tags": [
           {
@@ -157,41 +255,41 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 33,
             "name": "I am using samsung-s10",
             "result": {
               "status": "passed",
-              "duration": 233000000
+              "duration": 993000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 34,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 532000000
+              "duration": 1361000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 35,
             "name": "I land on home page",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 36,
             "name": "I can use dropdown menu to select categories",
             "result": {
               "status": "passed",
-              "duration": 482000000
+              "duration": 1362000000
             }
           }
         ]
@@ -199,7 +297,7 @@
       {
         "id": "automationteststore.com-testing;phone-categories-dropdown",
         "keyword": "Scenario",
-        "line": 28,
+        "line": 40,
         "name": "Phone categories dropdown",
         "tags": [
           {
@@ -212,27 +310,27 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 21,
+            "line": 33,
             "name": "I am using iphone-x",
             "result": {
               "status": "passed",
-              "duration": 244000000
+              "duration": 433000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 22,
+            "line": 34,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 529000000
+              "duration": 688000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 23,
+            "line": 35,
             "name": "I land on home page",
             "result": {
               "status": "passed",
@@ -242,11 +340,11 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 24,
+            "line": 36,
             "name": "I can use dropdown menu to select categories",
             "result": {
               "status": "passed",
-              "duration": 450000000
+              "duration": 752000000
             }
           }
         ]
@@ -254,7 +352,7 @@
       {
         "id": "automationteststore.com-testing;login-into-account",
         "keyword": "Scenario",
-        "line": 30,
+        "line": 42,
         "name": "Login into account",
         "tags": [
           {
@@ -267,7 +365,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 31,
+            "line": 43,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -293,7 +391,7 @@
               }
             ],
             "keyword": "When ",
-            "line": 32,
+            "line": 44,
             "name": "I sign up with user",
             "result": {
               "status": "skipped"
@@ -302,7 +400,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 35,
+            "line": 47,
             "name": "I'm logged into account",
             "result": {
               "status": "skipped"
@@ -311,7 +409,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 36,
+            "line": 48,
             "name": "I can log out from account",
             "result": {
               "status": "skipped"
@@ -322,7 +420,7 @@
       {
         "id": "automationteststore.com-testing;login-into-account-with-invalid-user",
         "keyword": "Scenario",
-        "line": 38,
+        "line": 50,
         "name": "Login into account with invalid user",
         "tags": [
           {
@@ -335,7 +433,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 39,
+            "line": 51,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -361,7 +459,7 @@
               }
             ],
             "keyword": "When ",
-            "line": 40,
+            "line": 52,
             "name": "I sign up with user",
             "result": {
               "status": "skipped"
@@ -370,7 +468,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 43,
+            "line": 55,
             "name": "I can see error message: \"Error: Incorrect login or password provided\"",
             "result": {
               "status": "skipped"
@@ -381,7 +479,7 @@
       {
         "id": "automationteststore.com-testing;footer-test",
         "keyword": "Scenario",
-        "line": 45,
+        "line": 57,
         "name": "Footer Test",
         "tags": [
           {
@@ -394,7 +492,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 46,
+            "line": 58,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -448,7 +546,7 @@
               }
             ],
             "keyword": "Then ",
-            "line": 47,
+            "line": 59,
             "name": "Footer contains all expected option",
             "result": {
               "status": "skipped"
@@ -502,7 +600,7 @@
               }
             ],
             "keyword": "And ",
-            "line": 56,
+            "line": 68,
             "name": "Footer options leads to proper content",
             "result": {
               "status": "skipped"
@@ -513,7 +611,7 @@
       {
         "id": "automationteststore.com-testing;register-new-user",
         "keyword": "Scenario",
-        "line": 70,
+        "line": 82,
         "name": "Register new user",
         "tags": [
           {
@@ -526,7 +624,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 71,
+            "line": 83,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "skipped"
@@ -535,7 +633,7 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 72,
+            "line": 84,
             "name": "I register new account",
             "result": {
               "status": "skipped"
@@ -544,7 +642,7 @@
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 73,
+            "line": 85,
             "name": "New account is created",
             "result": {
               "status": "skipped"
@@ -553,7 +651,7 @@
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 74,
+            "line": 86,
             "name": "I am logged into new account",
             "result": {
               "status": "skipped"
@@ -564,7 +662,7 @@
       {
         "id": "automationteststore.com-testing;search-for-product",
         "keyword": "Scenario",
-        "line": 82,
+        "line": 94,
         "name": "Search for product",
         "tags": [
           {
@@ -577,31 +675,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 77,
+            "line": 89,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 759000000
+              "duration": 1375000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 78,
+            "line": 90,
             "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 511000000
+              "duration": 954000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 79,
+            "line": 91,
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 377000000
+              "duration": 1159000000
             }
           }
         ]
@@ -609,7 +707,7 @@
       {
         "id": "automationteststore.com-testing;search-for-product",
         "keyword": "Scenario",
-        "line": 83,
+        "line": 95,
         "name": "Search for product",
         "tags": [
           {
@@ -622,31 +720,31 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 77,
+            "line": 89,
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 682000000
+              "duration": 1792000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 78,
+            "line": 90,
             "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 578000000
+              "duration": 1121000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 79,
+            "line": 91,
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 254000000
+              "duration": 524000000
             }
           }
         ]

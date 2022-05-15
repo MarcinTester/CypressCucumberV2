@@ -1,12 +1,24 @@
 @regression
 Feature: automationteststore.com testing
-    @focus
+
     Scenario: Add product to cart
         Given I open automationteststore.com Page
         And Search for "shoes"
         When I click add to cart button
         Then "Womens high heel point toe stiletto sandals ankle strap court shoes" is visible in cart
-         
+
+    @focus
+    Scenario: Confirm order
+        Given I open automationteststore.com Page
+        And I sign up with user
+            | userLogin     | password |
+            | test129129129 | test1    |
+        When Search for "shoes"
+        And I click add to cart button
+        And I go to checkout and confrim order
+        Then My order is processed
+        And I can go back to home page
+
     @smoke
     Scenario: Open Home Page
         Given I open automationteststore.com Page

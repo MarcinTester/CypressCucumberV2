@@ -8,8 +8,14 @@ class ShoppingCart_PO {
     static productName() {
         return cy.get("tbody > :nth-child(2) > :nth-child(2) > a")
     }
+    static checkoutButton() {
+        return cy.get("#cart_checkout1")
+    }
+    static clickCheckoutButton() {
+        this.checkoutButton().click()
+    }
     static productIsVisibleInCart(product) {
-        ShoppingCart_PO.productName().should("be.visible").and("contain", product)
+        this.productName().should("be.visible").and("contain", product)
     }
 
 } export default ShoppingCart_PO

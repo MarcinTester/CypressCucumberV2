@@ -5,6 +5,7 @@ import RegistrationPage_PO from '../../../support/pageObjects/testStore/Registra
 import AccountPage_PO from '../../../support/pageObjects/testStore/AccountPage_PO'
 import ContentPage_PO from '../../../support/pageObjects/testStore/ContentPage_PO'
 import ShoppingCart_PO from '../../../support/pageObjects/testStore/ShoppingCart_PO'
+import CheckoutPage_PO from '../../../support/pageObjects/testStore/CheckoutPage_PO'
 import Ppd_PO from '../../../support/pageObjects/testStore/Ppd_PO'
 /// <reference types="Cypress" />
 
@@ -15,7 +16,7 @@ Given('I am using {word}', function (preset) {
     cy.viewport(preset)
 })
 Then('I land on home page', function () {
-    HomePage_PO.homePageElementsCheck
+    HomePage_PO.homePageElementsCheck()
 })
 Then('Login or register option is visible', function () {
     HomePage_PO.loginOrRegisterButton().should("be.visible").and("contain", "Login or register")
@@ -87,5 +88,16 @@ When('I click add to cart button', function () {
     ShoppingCart_PO.mainTextIsVisible()
 })
 Then('{string} is visible in cart', function (product) {
-   ShoppingCart_PO.productIsVisibleInCart(product)
+    ShoppingCart_PO.productIsVisibleInCart(product)
+})
+And('I go to checkout and confrim order', function () {
+    ShoppingCart_PO.clickCheckoutButton()
+    CheckoutPage_PO.clickConfirmOrder()
+})
+Then('My order is processed', function () {
+    CheckoutPage_PO.mainTextisVisible()
+})
+And('I can go back to home page', function () {
+    CheckoutPage_PO.clickContinueButton()
+    HomePage_PO.homePageElementsCheck()
 })
