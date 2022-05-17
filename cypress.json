@@ -13,5 +13,6 @@
     "runMode": 1,
     "openMode": 1
   },
-  "projectId": "3smycb"
+  "projectId": "3smycb",
+  "experimentalSessionAndOrigin": true
 }

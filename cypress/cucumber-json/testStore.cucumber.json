@@ -36,7 +36,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 15752000000
+              "duration": 2394000000
             }
           },
           {
@@ -46,7 +46,7 @@
             "name": "Search for \"shoes\"",
             "result": {
               "status": "passed",
-              "duration": 1037000000
+              "duration": 2287000000
             }
           },
           {
@@ -56,17 +56,17 @@
             "name": "Choose product \"black\" colour",
             "result": {
               "status": "passed",
-              "duration": 284000000
+              "duration": 450000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "Choose quantity: \"3\"",
+            "name": "Choose quantity: \"4\"",
             "result": {
               "status": "passed",
-              "duration": 418000000
+              "duration": 660000000
             }
           },
           {
@@ -76,7 +76,7 @@
             "name": "I click add to cart button",
             "result": {
               "status": "passed",
-              "duration": 728000000
+              "duration": 1289000000
             }
           },
           {
@@ -86,7 +86,7 @@
             "name": "\"Womens high heel point toe stiletto sandals ankle strap court shoes\" is visible in cart",
             "result": {
               "status": "passed",
-              "duration": 55000000
+              "duration": 118000000
             }
           },
           {
@@ -96,18 +96,17 @@
             "name": "Colour \"black\" is selected",
             "result": {
               "status": "passed",
-              "duration": 34000000
+              "duration": 94000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 12,
-            "name": "Quantity \"3\" is selected",
+            "name": "Quantity \"4\" is selected",
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "AssertionError: Timed out retrying after 15000ms: expected '<input#cart_quantity11841f16db428e112176d38819667a1fac1.form-control.short>' to contain '3'\n    at Function.CheckQuantityOfProduct (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:727:32)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:196:31)\n    at Context.resolveAndRunStepDefinition (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12995:29)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12316:35)"
+              "status": "passed",
+              "duration": 81000000
             }
           }
         ]
@@ -297,7 +296,7 @@
             "name": "I am using samsung-s10",
             "result": {
               "status": "passed",
-              "duration": 15272000000
+              "duration": 5590000000
             }
           },
           {
@@ -307,7 +306,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 996000000
+              "duration": 2397000000
             }
           },
           {
@@ -317,7 +316,7 @@
             "name": "I land on home page",
             "result": {
               "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 15000ms: expected '<input#filter_keyword.pull-left.input-medium.search-query.dropdown-toggle>' to be 'visible'\n\nThis element `<input#filter_keyword.pull-left.input-medium.search-query.dropdown-toggle>` is not visible because its parent `<div.navbar-collapse.collapse>` has CSS property: `display: none`\n    at Function.homePageElementsCheck (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:431:26)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:85:27)\n    at Context.resolveAndRunStepDefinition (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12995:29)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12316:35)"
+              "error_message": "CypressError: You attempted to make a chai-jQuery assertion on an object that is neither a DOM object or a jQuery object.\n\nThe chai-jQuery assertion you used was:\n\n  > visible\n\nThe invalid subject you asserted on was:\n\n  > undefined\n\nTo use chai-jQuery assertions your subject must be valid.\n\nThis can sometimes happen if a previous assertion changed the subject.\n    at Object.onInvalid (https://automationteststore.com/__cypress/runner/cypress_runner.js:151355:76)\n    at assertDom (https://automationteststore.com/__cypress/runner/cypress_runner.js:171532:26)\n    at assert (https://automationteststore.com/__cypress/runner/cypress_runner.js:171538:5)\n    at Assertion.<anonymous> (https://automationteststore.com/__cypress/runner/cypress_runner.js:171640:14)\n    at Assertion.propertyGetter (https://automationteststore.com/__cypress/runner/cypress_runner.js:103009:29)\n    at Object.proxyGetter [as get] (https://automationteststore.com/__cypress/runner/cypress_runner.js:104447:22)\n    at applyChainer (https://automationteststore.com/__cypress/runner/cypress_runner.js:155822:25)\n    at https://automationteststore.com/__cypress/runner/cypress_runner.js:155880:16\n    at arrayReduce (https://automationteststore.com/__cypress/runner/cypress_runner.js:41485:21)\n    at Function.reduce (https://automationteststore.com/__cypress/runner/cypress_runner.js:50537:14)\n    at applyChainers (https://automationteststore.com/__cypress/runner/cypress_runner.js:155857:68)\nFrom previous event:\n    at Context.shouldFn (https://automationteststore.com/__cypress/runner/cypress_runner.js:155886:63)\n    at Context.should (https://automationteststore.com/__cypress/runner/cypress_runner.js:155905:23)\n    at Context.<anonymous> (https://automationteststore.com/__cypress/runner/cypress_runner.js:173267:19)\nFrom Your Spec Code:\n    at Function.homePageElementsCheck (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:431:26)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:85:27)\n    at Context.resolveAndRunStepDefinition (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12995:29)\n    at Context.eval (https://automationteststore.com/__cypress/tests?p=cypress\\integration\\BDD\\testStore.feature:12316:35)"
             }
           },
           {
@@ -351,7 +350,7 @@
             "name": "I am using iphone-x",
             "result": {
               "status": "passed",
-              "duration": 15254000000
+              "duration": 15725000000
             }
           },
           {
@@ -361,7 +360,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 659000000
+              "duration": 1971000000
             }
           },
           {
@@ -715,7 +714,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1074000000
+              "duration": 1464000000
             }
           },
           {
@@ -725,7 +724,7 @@
             "name": "I search for Men",
             "result": {
               "status": "passed",
-              "duration": 577000000
+              "duration": 1216000000
             }
           },
           {
@@ -735,7 +734,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 380000000
+              "duration": 1182000000
             }
           }
         ]
@@ -760,7 +759,7 @@
             "name": "I open automationteststore.com Page",
             "result": {
               "status": "passed",
-              "duration": 1583000000
+              "duration": 788000000
             }
           },
           {
@@ -770,7 +769,7 @@
             "name": "I search for Skin",
             "result": {
               "status": "passed",
-              "duration": 884000000
+              "duration": 682000000
             }
           },
           {
@@ -780,7 +779,7 @@
             "name": "I can see PLP with results",
             "result": {
               "status": "passed",
-              "duration": 975000000
+              "duration": 160000000
             }
           }
         ]

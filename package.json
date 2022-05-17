@@ -9,7 +9,6 @@
     "TestStore": "npx cypress run --spec **/testStore.feature  --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome",
     "InProgress-Chrome-Dashboard": "npx cypress-tags run -e TAGS=\"@inProgress\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92 --headed --browser chrome",
     "Smoke-allBrowsers-Dashboard": "npm run Smoke-Dashboard -- --browser electron --headed & npm run Smoke-Dashboard -- --browser chrome --headed & npm run Smoke-Dashboard -- --browser firefox --headed & npm run Smoke-Dashboard -- --browser edge --headed",
-    
     "Regression-Dashboard": "npx cypress-tags run -e TAGS=\"@regression\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92",
     "Regression-Chrome-Dashboard": "npm run Regression-Dashboard -- --browser chrome --headed",
     "Regression-Firefox-Dashboard": "npm run Regression-Dashboard -- --browser firefox --headed",
@@ -17,7 +16,6 @@
     "Regression-Edge-Dashboard": "npm run Regression-Dashboard -- --browser edge --headed",
     "Regression-Chrome/Firefox-Dashboard": "npm run Regression-Chrome-Dashboard & npm run Regression-Firefox-Dashboard",
     "Regression-Electron/Edge-Dashboard": "npm run Regression-Electron-Dashboard & npm run Regression-Edge-Dashboard",
-
     "Smoke-Dashboard": "npx cypress-tags run -e TAGS=\"@smoke\" --record --key c32b4dc7-deb8-4ad4-a130-5d9ffee0df92",
     "Smoke-Chrome-Dashboard": "npm run Smoke-Dashboard -- --browser chrome --headed",
     "Smoke-Firefox-Dashboard": "npm run Smoke-Dashboard -- --browser firefox --headed",
@@ -39,7 +37,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/mochawesome": "^6.2.1",
-    "cypress": "^9.5.4",
+    "cypress": "^9.6.1",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "mocha": "^9.2.2",
     "mochawesome": "^7.1.3",

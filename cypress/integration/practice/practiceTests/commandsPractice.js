@@ -26,7 +26,7 @@ describe('Coommandspractice', function () {
     cy.visit("https://automationteststore.com/")
     cy.get(".nav-pills > li").contains("Makeup").click()
   })
-  it.only('Random fail test', function () {
+  it('Random fail test', function () {
     cy.visit("https://automationteststore.com/")
     const n = () => Cypress._.random(0, 1 )
     const x = n()
@@ -44,5 +44,12 @@ describe('Coommandspractice', function () {
    cy.get("ul[class='dropdown-menu currency']").invoke('show')
    cy.get("ul[class='dropdown-menu currency'] > li").contains('$ US Dollar').click()
    cy.wait(3000)
+  })
+  it.only('My FirstTest case', function () {
+    cy.visit("https://www.facebook.com/")
+    cy.origin("https://automationteststore.com/", () => {
+    cy.visit("https://automationteststore.com/")
+    cy.get(".nav-pills > li").contains("Makeup").click()
+  })
   })
 })
